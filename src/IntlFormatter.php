@@ -10,7 +10,7 @@
 
 namespace SebastianBergmann\Money;
 
-use NumberFormatter;
+use NumberFormatter;  
 
 /**
  * Formatter implementation that uses PHP's built-in NumberFormatter.
@@ -33,9 +33,9 @@ class IntlFormatter implements Formatter
      */
     public function __construct($locale)
     {
-        $this->numberFormatter = new NumberFormatter(
+        $this->numberFormatter = new \NumberFormatter(
             $locale,
-            NumberFormatter::CURRENCY
+            \NumberFormatter::CURRENCY
         );
     }
 
