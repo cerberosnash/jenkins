@@ -1,0 +1,182 @@
+\href{https://packagist.org/packages/sebastian/money}{\tt !\mbox{[}Latest Stable Version\mbox{]}(https\+://poser.\+pugx.\+org/sebastian/money/v/stable.\+png)} \href{https://scrutinizer-ci.com/g/sebastianbergmann/money/build-status/master}{\tt !\mbox{[}Build Status\mbox{]}(https\+://scrutinizer-\/ci.\+com/g/sebastianbergmann/money/badges/build.\+png?b=master)} \href{https://scrutinizer-ci.com/g/sebastianbergmann/money/?branch=master}{\tt !\mbox{[}Code Coverage\mbox{]}(https\+://scrutinizer-\/ci.\+com/g/sebastianbergmann/money/badges/coverage.\+png?b=master)} \href{https://scrutinizer-ci.com/g/sebastianbergmann/money/?branch=master}{\tt !\mbox{[}Scrutinizer Code Quality\mbox{]}(https\+://scrutinizer-\/ci.\+com/g/sebastianbergmann/money/badges/quality-\/score.\+png?b=master)} \href{https://www.versioneye.com/php/sebastian:money/references}{\tt !\mbox{[}Reference Status\mbox{]}(https\+://www.\+versioneye.\+com/php/sebastian\+:money/reference\+\_\+badge.\+svg?style=flat)}
+
+\section*{Money}
+
+\href{http://martinfowler.com/bliki/ValueObject.html}{\tt Value Object} that represents a \href{http://martinfowler.com/eaaCatalog/money.html}{\tt monetary value using a currency\textquotesingle{}s smallest unit}.
+
+\subsection*{Installation}
+
+Simply add a dependency on {\ttfamily sebastian/money} to your project\textquotesingle{}s {\ttfamily composer.\+json} file if you use \href{http://getcomposer.org/}{\tt Composer} to manage the dependencies of your project.
+
+Here is a minimal example of a {\ttfamily composer.\+json} file that just defines a dependency on Money\+: \begin{DoxyVerb}{
+    "require": {
+        "sebastian/money": "1.5.*"
+    }
+}
+\end{DoxyVerb}
+
+
+\subsection*{Usage Examples}
+
+\paragraph*{Creating a Money object and accessing its monetary value}
+
+```php use Sebastian\+Bergmann; use Sebastian\+Bergmann;
+
+// Create Money object that represents 1 E\+U\+R \$m = new Money(100, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{}));
+
+// Access the Money object\textquotesingle{}s monetary value print \$m-\/$>$get\+Amount(); ```
+
+The code above produces the output shown below\+: \begin{DoxyVerb}100
+\end{DoxyVerb}
+
+
+\paragraph*{Creating a Money object from a string value}
+
+```php use Sebastian\+Bergmann; use Sebastian\+Bergmann;
+
+// Create Money object that represents 12.\+34 E\+U\+R \$m = Money\+::from\+String(\textquotesingle{}12.\+34\textquotesingle{}, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{}))
+
+// Access the Money object\textquotesingle{}s monetary value print \$m-\/$>$get\+Amount(); ```
+
+The code above produces the output shown below\+: \begin{DoxyVerb}1234
+\end{DoxyVerb}
+
+
+\paragraph*{Using a Currency-\/specific subclass of Money}
+
+```php use Sebastian\+Bergmann;
+
+// Create Money object that represents 1 E\+U\+R \$m = new E\+U\+R(100);
+
+// Access the Money object\textquotesingle{}s monetary value print \$m-\/$>$get\+Amount(); ```
+
+The code above produces the output shown below\+: \begin{DoxyVerb}100
+\end{DoxyVerb}
+
+
+Please note that there is no subclass of {\ttfamily Money} that is specific to Turkish Lira as {\ttfamily T\+R\+Y} is not a valid class name in P\+H\+P.
+
+\paragraph*{Formatting a Money object using P\+H\+P\textquotesingle{}s built-\/in Number\+Formatter}
+
+```php use Sebastian\+Bergmann; use Sebastian\+Bergmann; use Sebastian\+Bergmann;
+
+// Create Money object that represents 1 E\+U\+R \$m = new Money(100, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{}));
+
+// Format a Money object using P\+H\+P\textquotesingle{}s built-\/in Number\+Formatter (German locale) \$f = new Intl\+Formatter(\textquotesingle{}de\+\_\+\+D\+E\textquotesingle{});
+
+print \$f-\/$>$format(\$m); ```
+
+The code above produces the output shown below\+: \begin{DoxyVerb}1,00 €
+\end{DoxyVerb}
+
+
+\paragraph*{Basic arithmetic using Money objects}
+
+```php use Sebastian\+Bergmann; use Sebastian\+Bergmann;
+
+// Create two Money objects that represent 1 E\+U\+R and 2 E\+U\+R, respectively \$a = new Money(100, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{})); \$b = new Money(200, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{}));
+
+// Negate a Money object \$c = \$a-\/$>$negate(); print \$c-\/$>$get\+Amount();
+
+// Calculate the sum of two Money objects \$c = \$a-\/$>$add(\$b); print \$c-\/$>$get\+Amount();
+
+// Calculate the difference of two Money objects \$c = \$b-\/$>$subtract(\$a); print \$c-\/$>$get\+Amount();
+
+// Multiply a Money object with a factor \$c = \$a-\/$>$multiply(2); print \$c-\/$>$get\+Amount(); ```
+
+The code above produces the output shown below\+: \begin{DoxyVerb}-100
+300
+100
+200
+\end{DoxyVerb}
+
+
+\paragraph*{Comparing Money objects}
+
+```php use Sebastian\+Bergmann; use Sebastian\+Bergmann;
+
+// Create two Money objects that represent 1 E\+U\+R and 2 E\+U\+R, respectively \$a = new Money(100, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{})); \$b = new Money(200, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{}));
+
+var\+\_\+dump(\$a-\/$>$less\+Than(\$b)); var\+\_\+dump(\$a-\/$>$greater\+Than(\$b));
+
+var\+\_\+dump(\$b-\/$>$less\+Than(\$a)); var\+\_\+dump(\$b-\/$>$greater\+Than(\$a));
+
+var\+\_\+dump(\$a-\/$>$compare\+To(\$b)); var\+\_\+dump(\$a-\/$>$compare\+To(\$a)); var\+\_\+dump(\$b-\/$>$compare\+To(\$a)); ```
+
+The code above produces the output shown below\+: \begin{DoxyVerb}bool(true)
+bool(false)
+bool(false)
+bool(true)
+int(-1)
+int(0)
+int(1)
+\end{DoxyVerb}
+
+
+The {\ttfamily compare\+To()} method returns an integer less than, equal to, or greater than zero if the value of one {\ttfamily Money} object is considered to be respectively less than, equal to, or greater than that of another {\ttfamily Money} object.
+
+You can use the {\ttfamily compare\+To()} method to sort an array of {\ttfamily Money} objects using P\+H\+P\textquotesingle{}s built-\/in sorting functions\+:
+
+```php use Sebastian\+Bergmann; use Sebastian\+Bergmann;
+
+\$m = array( new Money(300, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{})), new Money(100, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{})), new Money(200, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{})) );
+
+usort( \$m, function (\$a, \$b) \{ return \$a-\/$>$compare\+To(\$b); \} );
+
+foreach (\$m as \$\+\_\+m) \{ print \$\+\_\+m-\/$>$get\+Amount() . \char`\"{}\textbackslash{}n\char`\"{}; \} ```
+
+The code above produces the output shown below\+: \begin{DoxyVerb}100
+200
+300
+\end{DoxyVerb}
+
+
+\paragraph*{Allocate the monetary value represented by a Money object among N targets}
+
+```php use Sebastian\+Bergmann; use Sebastian\+Bergmann;
+
+// Create a Money object that represents 0,99 E\+U\+R \$a = new Money(99, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{}));
+
+foreach (\$a-\/$>$allocate\+To\+Targets(10) as \$t) \{ print \$t-\/$>$get\+Amount() . \char`\"{}\textbackslash{}n\char`\"{}; \} ```
+
+The code above produces the output shown below\+: \begin{DoxyVerb}10
+10
+10
+10
+10
+10
+10
+10
+10
+9
+\end{DoxyVerb}
+
+
+\paragraph*{Allocate the monetary value represented by a Money object using a list of ratios}
+
+```php use Sebastian\+Bergmann; use Sebastian\+Bergmann;
+
+// Create a Money object that represents 0,05 E\+U\+R \$a = new Money(5, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{}));
+
+foreach (\$a-\/$>$allocate\+By\+Ratios(array(3, 7)) as \$t) \{ print \$t-\/$>$get\+Amount() . \char`\"{}\textbackslash{}n\char`\"{}; \} ```
+
+The code above produces the output shown below\+: \begin{DoxyVerb}2
+3
+\end{DoxyVerb}
+
+
+\paragraph*{Extract a percentage (and a subtotal) from the monetary value represented by a Money object}
+
+```php use Sebastian\+Bergmann; use Sebastian\+Bergmann;
+
+// Create a Money object that represents 100,00 E\+U\+R \$original = new Money(10000, new Currency(\textquotesingle{}E\+U\+R\textquotesingle{}));
+
+// Extract 21\% (and the corresponding subtotal) \$extract = \$original-\/$>$extract\+Percentage(21);
+
+printf( \char`\"{}\%d = \%d + \%d\textbackslash{}n\char`\"{}, \$original-\/$>$get\+Amount(), \$extract\mbox{[}\textquotesingle{}subtotal\textquotesingle{}\mbox{]}-\/$>$get\+Amount(), \$extract\mbox{[}\textquotesingle{}percentage\textquotesingle{}\mbox{]}-\/$>$get\+Amount() ); ```
+
+The code above produces the output shown below\+: \begin{DoxyVerb}10000 = 8265 + 1735
+\end{DoxyVerb}
+
+
+Please note that this extracts the percentage out of a monetary value where the percentage is already included. If you want to get the percentage of the monetary value you should use multiplication ({\ttfamily multiply(0.\+21)}, for instance, to calculate 21\% of a monetary value represented by a Money object) instead. 

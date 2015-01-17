@@ -16,6 +16,7 @@
         <mkdir dir="${basedir}/build/coverage"/>
         <mkdir dir="${basedir}/build/logs"/>
         <mkdir dir="${basedir}/build/pdepend"/>
+        <mkdir dir="${basedir}/build/doxygen"/>
         <property name="prepare.done" value="true"/>
     </target>
 
@@ -90,13 +91,13 @@
             <arg value="--reportfile" />
             <arg path="${basedir}/build/logs/pmd.xml" />
         </exec>
-    </target>
+    </target> 
 
     <target name="phpcs" description="Find coding standard violations using PHP_CodeSniffer and print result in text format">
         <exec executable="${basedir}/build/tools/phpcs.phar">
             <arg value="--standard=PSR2" />
             <arg value="--extensions=php" />
-            <arg value="--ignore=autoload.php" />
+            <arg value="--ignore=autoload.php" /> 
             <arg path="${basedir}/src" />
             <arg path="${basedir}/tests" />
         </exec>
@@ -105,7 +106,7 @@
     <target name="phpcs-ci" depends="prepare" description="Find coding standard violations using PHP_CodeSniffer and log result in XML format">
         <exec executable="${basedir}/build/tools/phpcs.phar" output="/dev/null">
             <arg value="--report=checkstyle" />
-            <arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
+            <arg value="--report-file=${basedir}/build/logs/checkstyle.xml" /> 
             <arg value="--standard=PSR2" />
             <arg value="--extensions=php" />
             <arg value="--ignore=autoload.php" />
@@ -118,7 +119,7 @@
             <arg path="${basedir}/src" />
         </exec>
     </target>  
-
+ 
     <target name="phpcpd-ci" depends="prepare" description="Find duplicate code using PHPCPD and log result in XML format">
         <exec executable="${basedir}/build/tools/phpcpd.phar">
             <arg value="--log-pmd" />

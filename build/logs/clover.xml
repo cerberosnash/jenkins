@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1421476688">
+  <project timestamp="1421476688">
+    <package name="SebastianBergmann\Money">
+      <file name="/var/www/html/jenkins/src/Currency.php">
+        <class name="Currency" namespace="SebastianBergmann\Money" fullPackage="Money" package="Money">
+          <metrics methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="29" coveredelements="29"/>
+        </class>
+        <line num="1135" type="method" name="__construct" crap="3" count="3"/>
+        <line num="1137" type="stmt" count="3"/>
+        <line num="1138" type="stmt" count="2"/>
+        <line num="1139" type="stmt" count="2"/>
+        <line num="1141" type="stmt" count="3"/>
+        <line num="1142" type="stmt" count="1"/>
+        <line num="1143" type="stmt" count="1"/>
+        <line num="1144" type="stmt" count="1"/>
+        <line num="1147" type="stmt" count="2"/>
+        <line num="1148" type="stmt" count="2"/>
+        <line num="1157" type="method" name="addCurrency" crap="1" count="1"/>
+        <line num="1159" type="stmt" count="1"/>
+        <line num="1160" type="stmt" count="1"/>
+        <line num="1161" type="stmt" count="1"/>
+        <line num="1162" type="stmt" count="1"/>
+        <line num="1163" type="stmt" count="1"/>
+        <line num="1165" type="stmt" count="1"/>
+        <line num="1172" type="method" name="getCurrencyCode" crap="1" count="1"/>
+        <line num="1174" type="stmt" count="1"/>
+        <line num="1183" type="method" name="getDefaultFractionDigits" crap="1" count="1"/>
+        <line num="1185" type="stmt" count="1"/>
+        <line num="1193" type="method" name="getDisplayName" crap="1" count="1"/>
+        <line num="1195" type="stmt" count="1"/>
+        <line num="1203" type="method" name="getNumericCode" crap="1" count="1"/>
+        <line num="1205" type="stmt" count="1"/>
+        <line num="1213" type="method" name="getSubUnit" crap="1" count="1"/>
+        <line num="1215" type="stmt" count="1"/>
+        <line num="1223" type="method" name="__toString" crap="1" count="1"/>
+        <line num="1225" type="stmt" count="1"/>
+        <metrics loc="1227" ncloc="1158" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="29" coveredelements="29"/>
+      </file>
+      <file name="/var/www/html/jenkins/src/IntlFormatter.php">
+        <class name="IntlFormatter" namespace="SebastianBergmann\Money" fullPackage="Money" package="Money">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="10" coveredelements="10"/>
+        </class>
+        <line num="34" type="method" name="__construct" crap="1" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="48" type="method" name="format" crap="1" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <metrics loc="55" ncloc="26" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="10" coveredelements="10"/>
+      </file>
+      <file name="/var/www/html/jenkins/src/Money.php">
+        <class name="Money" namespace="SebastianBergmann\Money" fullPackage="Money" package="Money">
+          <metrics methods="24" coveredmethods="24" conditionals="0" coveredconditionals="0" statements="100" coveredstatements="100" elements="124" coveredelements="124"/>
+        </class>
+        <line num="52" type="method" name="__construct" crap="2" count="4"/>
+        <line num="54" type="stmt" count="4"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="58" type="stmt" count="3"/>
+        <line num="59" type="stmt" count="3"/>
+        <line num="60" type="stmt" count="2"/>
+        <line num="77" type="method" name="fromString" crap="2" count="3"/>
+        <line num="79" type="stmt" count="3"/>
+        <line num="80" type="stmt" count="1"/>
+        <line num="83" type="stmt" count="2"/>
+        <line num="85" type="stmt" count="2"/>
+        <line num="86" type="stmt" count="2"/>
+        <line num="87" type="stmt" count="2"/>
+        <line num="88" type="stmt" count="2"/>
+        <line num="89" type="stmt" count="2"/>
+        <line num="90" type="stmt" count="2"/>
+        <line num="91" type="stmt" count="2"/>
+        <line num="93" type="stmt" count="2"/>
+        <line num="94" type="stmt" count="2"/>
+        <line num="96" type="stmt" count="2"/>
+        <line num="97" type="stmt" count="2"/>
+        <line num="99" type="stmt" count="2"/>
+        <line num="108" type="method" name="jsonSerialize" crap="1" count="1"/>
+        <line num="111" type="stmt" count="1"/>
+        <line num="112" type="stmt" count="1"/>
+        <line num="113" type="stmt" count="1"/>
+        <line num="121" type="method" name="getAmount" crap="1" count="1"/>
+        <line num="123" type="stmt" count="1"/>
+        <line num="132" type="method" name="getCurrency" crap="1" count="1"/>
+        <line num="134" type="stmt" count="1"/>
+        <line num="146" type="method" name="add" crap="1" count="3"/>
+        <line num="148" type="stmt" count="3"/>
+        <line num="150" type="stmt" count="2"/>
+        <line num="152" type="stmt" count="2"/>
+        <line num="154" type="stmt" count="1"/>
+        <line num="166" type="method" name="subtract" crap="1" count="3"/>
+        <line num="168" type="stmt" count="3"/>
+        <line num="170" type="stmt" count="2"/>
+        <line num="172" type="stmt" count="2"/>
+        <line num="174" type="stmt" count="1"/>
+        <line num="183" type="method" name="negate" crap="1" count="1"/>
+        <line num="185" type="stmt" count="1"/>
+        <line num="197" type="method" name="multiply" crap="2" count="2"/>
+        <line num="199" type="stmt" count="2"/>
+        <line num="200" type="stmt" count="1"/>
+        <line num="202" type="stmt" count="1"/>
+        <line num="205" type="stmt" count="1"/>
+        <line num="206" type="stmt" count="1"/>
+        <line num="207" type="stmt" count="1"/>
+        <line num="208" type="stmt" count="1"/>
+        <line num="209" type="stmt" count="1"/>
+        <line num="220" type="method" name="allocateToTargets" crap="4" count="2"/>
+        <line num="222" type="stmt" count="2"/>
+        <line num="223" type="stmt" count="1"/>
+        <line num="226" type="stmt" count="1"/>
+        <line num="227" type="stmt" count="1"/>
+        <line num="228" type="stmt" count="1"/>
+        <line num="229" type="stmt" count="1"/>
+        <line num="231" type="stmt" count="1"/>
+        <line num="232" type="stmt" count="1"/>
+        <line num="233" type="stmt" count="1"/>
+        <line num="235" type="stmt" count="1"/>
+        <line num="236" type="stmt" count="1"/>
+        <line num="237" type="stmt" count="1"/>
+        <line num="239" type="stmt" count="1"/>
+        <line num="249" type="method" name="allocateByRatios" crap="3" count="1"/>
+        <line num="252" type="stmt" count="1"/>
+        <line num="253" type="stmt" count="1"/>
+        <line num="254" type="stmt" count="1"/>
+        <line num="256" type="stmt" count="1"/>
+        <line num="257" type="stmt" count="1"/>
+        <line num="258" type="stmt" count="1"/>
+        <line num="259" type="stmt" count="1"/>
+        <line num="260" type="stmt" count="1"/>
+        <line num="262" type="stmt" count="1"/>
+        <line num="263" type="stmt" count="1"/>
+        <line num="264" type="stmt" count="1"/>
+        <line num="266" type="stmt" count="1"/>
+        <line num="285" type="method" name="extractPercentage" crap="1" count="1"/>
+        <line num="287" type="stmt" count="1"/>
+        <line num="288" type="stmt" count="1"/>
+        <line num="289" type="stmt" count="1"/>
+        <line num="290" type="stmt" count="1"/>
+        <line num="291" type="stmt" count="1"/>
+        <line num="294" type="stmt" count="1"/>
+        <line num="295" type="stmt" count="1"/>
+        <line num="296" type="stmt" count="1"/>
+        <line num="310" type="method" name="compareTo" crap="3" count="2"/>
+        <line num="312" type="stmt" count="2"/>
+        <line num="314" type="stmt" count="1"/>
+        <line num="315" type="stmt" count="1"/>
+        <line num="318" type="stmt" count="1"/>
+        <line num="328" type="method" name="equals" crap="1" count="1"/>
+        <line num="330" type="stmt" count="1"/>
+        <line num="341" type="method" name="greaterThan" crap="1" count="1"/>
+        <line num="343" type="stmt" count="1"/>
+        <line num="354" type="method" name="greaterThanOrEqual" crap="2" count="1"/>
+        <line num="356" type="stmt" count="1"/>
+        <line num="367" type="method" name="lessThan" crap="1" count="1"/>
+        <line num="369" type="stmt" count="1"/>
+        <line num="380" type="method" name="lessThanOrEqual" crap="2" count="1"/>
+        <line num="382" type="stmt" count="1"/>
+        <line num="390" type="method" name="assertSameCurrency" crap="2" count="13"/>
+        <line num="392" type="stmt" count="13"/>
+        <line num="393" type="stmt" count="3"/>
+        <line num="395" type="stmt" count="10"/>
+        <line num="404" type="method" name="assertIsInteger" crap="2" count="2"/>
+        <line num="406" type="stmt" count="2"/>
+        <line num="407" type="stmt" count="2"/>
+        <line num="418" type="method" name="assertInsideIntegerBounds" crap="2" count="1"/>
+        <line num="420" type="stmt" count="1"/>
+        <line num="421" type="stmt" count="1"/>
+        <line num="432" type="method" name="castToInt" crap="1" count="2"/>
+        <line num="434" type="stmt" count="2"/>
+        <line num="436" type="stmt" count="2"/>
+        <line num="443" type="method" name="newMoney" crap="1" count="6"/>
+        <line num="445" type="stmt" count="6"/>
+        <line num="453" type="method" name="handleCurrencyArgument" crap="4" count="3"/>
+        <line num="455" type="stmt" count="3"/>
+        <line num="456" type="stmt" count="1"/>
+        <line num="459" type="stmt" count="2"/>
+        <line num="460" type="stmt" count="1"/>
+        <line num="461" type="stmt" count="1"/>
+        <line num="463" type="stmt" count="2"/>
+        <metrics loc="465" ncloc="245" classes="1" methods="24" coveredmethods="24" conditionals="0" coveredconditionals="0" statements="100" coveredstatements="100" elements="124" coveredelements="124"/>
+      </file>
+    </package>
+    <metrics files="3" loc="1747" ncloc="1429" classes="3" methods="34" coveredmethods="34" conditionals="0" coveredconditionals="0" statements="129" coveredstatements="129" elements="163" coveredelements="163"/>
+  </project>
+</coverage>

@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="Money.php">
+    <totals>
+      <lines total="465" comments="220" code="245" executable="100" executed="100" percent="100.00%"/>
+      <methods count="24" tested="24" percent="100.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="1" percent="100.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="Money" start="25" executable="100" executed="100" crap="42">
+      <package full="Money" name="Money" sub="" category=""/>
+      <namespace name="SebastianBergmann\Money"/>
+      <method name="__construct" signature="__construct($amount, $currency)" start="52" end="60" crap="2" executable="5" executed="5" coverage="100"/>
+      <method name="fromString" signature="fromString($value, $currency)" start="77" end="100" crap="2" executable="15" executed="15" coverage="100"/>
+      <method name="jsonSerialize" signature="jsonSerialize()" start="108" end="114" crap="1" executable="3" executed="3" coverage="100"/>
+      <method name="getAmount" signature="getAmount()" start="121" end="124" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="getCurrency" signature="getCurrency()" start="132" end="135" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="add" signature="add(Money $other)" start="146" end="155" crap="1" executable="4" executed="4" coverage="100"/>
+      <method name="subtract" signature="subtract(Money $other)" start="166" end="175" crap="1" executable="4" executed="4" coverage="100"/>
+      <method name="negate" signature="negate()" start="183" end="186" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="multiply" signature="multiply($factor, $roundingMode = PHP_ROUND_HALF_UP)" start="197" end="210" crap="2" executable="8" executed="8" coverage="100"/>
+      <method name="allocateToTargets" signature="allocateToTargets($n)" start="220" end="240" crap="4" executable="13" executed="13" coverage="100"/>
+      <method name="allocateByRatios" signature="allocateByRatios(array $ratios)" start="249" end="267" crap="3" executable="12" executed="12" coverage="100"/>
+      <method name="extractPercentage" signature="extractPercentage($percentage, $roundingMode = PHP_ROUND_HALF_UP)" start="285" end="297" crap="1" executable="8" executed="8" coverage="100"/>
+      <method name="compareTo" signature="compareTo(Money $other)" start="310" end="319" crap="3" executable="4" executed="4" coverage="100"/>
+      <method name="equals" signature="equals(Money $other)" start="328" end="331" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="greaterThan" signature="greaterThan(Money $other)" start="341" end="344" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="greaterThanOrEqual" signature="greaterThanOrEqual(Money $other)" start="354" end="357" crap="2" executable="1" executed="1" coverage="100"/>
+      <method name="lessThan" signature="lessThan(Money $other)" start="367" end="370" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="lessThanOrEqual" signature="lessThanOrEqual(Money $other)" start="380" end="383" crap="2" executable="1" executed="1" coverage="100"/>
+      <method name="assertSameCurrency" signature="assertSameCurrency(Money $a, Money $b)" start="390" end="395" crap="2" executable="3" executed="3" coverage="100"/>
+      <method name="assertIsInteger" signature="assertIsInteger($amount)" start="404" end="409" crap="2" executable="2" executed="2" coverage="100"/>
+      <method name="assertInsideIntegerBounds" signature="assertInsideIntegerBounds($amount)" start="418" end="423" crap="2" executable="2" executed="2" coverage="100"/>
+      <method name="castToInt" signature="castToInt($amount)" start="432" end="437" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="newMoney" signature="newMoney($amount)" start="443" end="446" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="handleCurrencyArgument" signature="handleCurrencyArgument($currency)" start="453" end="464" crap="4" executable="6" executed="6" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="54">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments2"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments2"/>
+      </line>
+      <line nr="55">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments"/>
+      </line>
+      <line nr="58">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments2"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments2"/>
+      </line>
+      <line nr="59">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments2"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments2"/>
+      </line>
+      <line nr="60">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments2"/>
+      </line>
+      <line nr="79">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments3"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="80">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments3"/>
+      </line>
+      <line nr="83">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="85">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="86">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="87">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="88">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="89">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="90">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="91">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="93">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="94">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="96">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="97">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="99">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2"/>
+      </line>
+      <line nr="111">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeSerializedToJson"/>
+      </line>
+      <line nr="112">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeSerializedToJson"/>
+      </line>
+      <line nr="113">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeSerializedToJson"/>
+      </line>
+      <line nr="123">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAmountCanBeRetrieved"/>
+      </line>
+      <line nr="134">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCurrencyCanBeRetrieved"/>
+      </line>
+      <line nr="148">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeAdded"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingAddition"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsAdded"/>
+      </line>
+      <line nr="150">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeAdded"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingAddition"/>
+      </line>
+      <line nr="152">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeAdded"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingAddition"/>
+      </line>
+      <line nr="154">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeAdded"/>
+      </line>
+      <line nr="168">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeSubtracted"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingSubtraction"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsSubtracted"/>
+      </line>
+      <line nr="170">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeSubtracted"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingSubtraction"/>
+      </line>
+      <line nr="172">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeSubtracted"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingSubtraction"/>
+      </line>
+      <line nr="174">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeSubtracted"/>
+      </line>
+      <line nr="185">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeNegated"/>
+      </line>
+      <line nr="199">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeMultipliedByAFactor"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMultipliedUsingInvalidRoundingMode"/>
+      </line>
+      <line nr="200">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMultipliedUsingInvalidRoundingMode"/>
+      </line>
+      <line nr="202">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMultipliedUsingInvalidRoundingMode"/>
+      </line>
+      <line nr="205">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeMultipliedByAFactor"/>
+      </line>
+      <line nr="206">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeMultipliedByAFactor"/>
+      </line>
+      <line nr="207">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeMultipliedByAFactor"/>
+      </line>
+      <line nr="208">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeMultipliedByAFactor"/>
+      </line>
+      <line nr="209">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeMultipliedByAFactor"/>
+      </line>
+      <line nr="222">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenTryingToAllocateToInvalidNumberOfTargets"/>
+      </line>
+      <line nr="223">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenTryingToAllocateToInvalidNumberOfTargets"/>
+      </line>
+      <line nr="226">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+      </line>
+      <line nr="227">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+      </line>
+      <line nr="228">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+      </line>
+      <line nr="229">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+      </line>
+      <line nr="231">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+      </line>
+      <line nr="232">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+      </line>
+      <line nr="233">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+      </line>
+      <line nr="235">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+      </line>
+      <line nr="236">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+      </line>
+      <line nr="237">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+      </line>
+      <line nr="239">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+      </line>
+      <line nr="252">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="253">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="254">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="256">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="257">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="258">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="259">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="260">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="262">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="263">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="264">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="266">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="287">
+        <covered by="SebastianBergmann\Money\MoneyTest::testPercentageCanBeExtracted"/>
+      </line>
+      <line nr="288">
+        <covered by="SebastianBergmann\Money\MoneyTest::testPercentageCanBeExtracted"/>
+      </line>
+      <line nr="289">
+        <covered by="SebastianBergmann\Money\MoneyTest::testPercentageCanBeExtracted"/>
+      </line>
+      <line nr="290">
+        <covered by="SebastianBergmann\Money\MoneyTest::testPercentageCanBeExtracted"/>
+      </line>
+      <line nr="291">
+        <covered by="SebastianBergmann\Money\MoneyTest::testPercentageCanBeExtracted"/>
+      </line>
+      <line nr="294">
+        <covered by="SebastianBergmann\Money\MoneyTest::testPercentageCanBeExtracted"/>
+      </line>
+      <line nr="295">
+        <covered by="SebastianBergmann\Money\MoneyTest::testPercentageCanBeExtracted"/>
+      </line>
+      <line nr="296">
+        <covered by="SebastianBergmann\Money\MoneyTest::testPercentageCanBeExtracted"/>
+      </line>
+      <line nr="312">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenComparedToMoneyObjectWithDifferentCurrency"/>
+      </line>
+      <line nr="314">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency"/>
+      </line>
+      <line nr="315">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency"/>
+      </line>
+      <line nr="318">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency"/>
+      </line>
+      <line nr="330">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency4"/>
+      </line>
+      <line nr="343">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency2"/>
+      </line>
+      <line nr="356">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency5"/>
+      </line>
+      <line nr="369">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency3"/>
+      </line>
+      <line nr="382">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency6"/>
+      </line>
+      <line nr="392">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeAdded"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingAddition"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsAdded"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeSubtracted"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingSubtraction"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsSubtracted"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency2"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency3"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency4"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency5"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency6"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenComparedToMoneyObjectWithDifferentCurrency"/>
+      </line>
+      <line nr="393">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsAdded"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsSubtracted"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenComparedToMoneyObjectWithDifferentCurrency"/>
+      </line>
+      <line nr="395">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeAdded"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingAddition"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeSubtracted"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingSubtraction"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency2"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency3"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency4"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency5"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency6"/>
+      </line>
+      <line nr="406">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingAddition"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingSubtraction"/>
+      </line>
+      <line nr="407">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingAddition"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingSubtraction"/>
+      </line>
+      <line nr="420">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForIntegerOverflow"/>
+      </line>
+      <line nr="421">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForIntegerOverflow"/>
+      </line>
+      <line nr="434">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeMultipliedByAFactor"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="436">
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeMultipliedByAFactor"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="445">
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeAdded"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeSubtracted"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeNegated"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeMultipliedByAFactor"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios"/>
+      </line>
+      <line nr="455">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments2"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments2"/>
+      </line>
+      <line nr="456">
+        <covered by="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments2"/>
+      </line>
+      <line nr="459">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments2"/>
+      </line>
+      <line nr="460">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments2"/>
+      </line>
+      <line nr="461">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments2"/>
+      </line>
+      <line nr="463">
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments"/>
+        <covered by="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments2"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>

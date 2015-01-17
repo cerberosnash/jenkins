@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <project name="/var/www/html/jenkins/src">
+    <tests>
+      <test name="SebastianBergmann\Money\CurrencyTest::testExceptionIsRaisedForInvalidConstructorArgument" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\CurrencyTest::testCanBeConstructedFromUppercaseString" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\CurrencyTest::testCanBeConstructedFromLowercaseString" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\CurrencyTest::testCustomCurrencyCanBeRegistered" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\CurrencyTest::testCanBeCastToString" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\CurrencyTest::testCurrencyCodeCanBeRetrieved" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\CurrencyTest::testDefaultFractionDigitsCanBeRetrieved" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\CurrencyTest::testDisplayNameCanBeRetrieved" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\CurrencyTest::testNumericCodeCanBeRetrieved" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\CurrencyTest::testSubUnitCanBeRetrieved" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\IntlFormatterTest::testMoneyObjectCanBeFormattedAsString" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments2" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForInvalidConstructorArguments3" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedForValidConstructorArguments2" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testObjectCanBeConstructedFromStringValue2" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testAmountCanBeRetrieved" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCurrencyCanBeRetrieved" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeAdded" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingAddition" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedForIntegerOverflow" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsAdded" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testAnotherMoneyObjectWithSameCurrencyCanBeSubtracted" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testExceptionIsThrownForOverflowingSubtraction" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsSubtracted" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCanBeNegated" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCanBeMultipliedByAFactor" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenMultipliedUsingInvalidRoundingMode" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedToNumberOfTargets" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testPercentageCanBeExtracted" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenTryingToAllocateToInvalidNumberOfTargets" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCanBeAllocatedByRatios" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency2" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency3" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency4" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency5" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCanBeComparedToAnotherMoneyObjectWithSameCurrency6" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testExceptionIsRaisedWhenComparedToMoneyObjectWithDifferentCurrency" result="0" status="PASSED"/>
+      <test name="SebastianBergmann\Money\MoneyTest::testCanBeSerializedToJson" result="0" status="PASSED"/>
+    </tests>
+    <directory name="/var/www/html/jenkins/src">
+      <totals>
+        <lines total="1747" comments="318" code="1429" executable="129" executed="129" percent="100.00%"/>
+        <methods count="34" tested="34" percent="100.00%"/>
+        <functions count="0" tested="0" percent=""/>
+        <classes count="3" tested="3" percent="100.00%"/>
+        <traits count="0" tested="0" percent=""/>
+      </totals>
+      <file name="Currency.php" href="Currency.php.xml">
+        <totals>
+          <lines total="1227" comments="69" code="1158" executable="21" executed="21" percent="100.00%"/>
+          <methods count="8" tested="8" percent="100.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="1" percent="100.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="IntlFormatter.php" href="IntlFormatter.php.xml">
+        <totals>
+          <lines total="55" comments="29" code="26" executable="8" executed="8" percent="100.00%"/>
+          <methods count="2" tested="2" percent="100.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="1" percent="100.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="Money.php" href="Money.php.xml">
+        <totals>
+          <lines total="465" comments="220" code="245" executable="100" executed="100" percent="100.00%"/>
+          <methods count="24" tested="24" percent="100.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="1" percent="100.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+    </directory>
+  </project>
+</phpunit>
