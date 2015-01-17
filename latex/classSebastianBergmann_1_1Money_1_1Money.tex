@@ -1,0 +1,597 @@
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money}{}\section{Sebastian\+Bergmann\textbackslash{}Money\textbackslash{}Money Class Reference}
+\label{classSebastianBergmann_1_1Money_1_1Money}\index{Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money@{Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money}}
+Inheritance diagram for Sebastian\+Bergmann\textbackslash{}Money\textbackslash{}Money\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classSebastianBergmann_1_1Money_1_1Money}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a3f04a6e943e160cf11c34db2ace48010}{\+\_\+\+\_\+construct} (\$amount, \$currency)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a458d28890e8d2d7bdf47ea481ac9e639}{json\+Serialize} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_ac33d55e50ba92bd98aa213315d1af201}{get\+Amount} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a27f9a4041099ab7f65f81865e7adb4c9}{get\+Currency} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a9b66787411ddea8330614ba621588740}{add} (\hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} \$other)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_add1e9a81b23e648560cf265cedbd4600}{subtract} (\hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} \$other)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_ae33f2e70c564a2eb62a58f92192e51bc}{negate} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a9d1710f6bf5ef8170bb6a8185032f0b9}{multiply} (\$factor, \$rounding\+Mode=P\+H\+P\+\_\+\+R\+O\+U\+N\+D\+\_\+\+H\+A\+L\+F\+\_\+\+U\+P)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a8310fe689adbea74cd0c2183827ff691}{allocate\+To\+Targets} (\$n)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a6c7551fd271f031e54be8499bfdf745c}{extract\+Percentage} (\$percentage, \$rounding\+Mode=P\+H\+P\+\_\+\+R\+O\+U\+N\+D\+\_\+\+H\+A\+L\+F\+\_\+\+U\+P)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a00ef3fcca0a99e3bc9e027e994884db7}{compare\+To} (\hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} \$other)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a93fc402915121bb3e1bd1db9ce83be5c}{equals} (\hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} \$other)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_ac6c6eb9c4e30fc7528d0d9dbdf6cae7e}{greater\+Than} (\hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} \$other)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a87172673727569ad1eb1cc310e6316af}{greater\+Than\+Or\+Equal} (\hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} \$other)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a9d4b18b26e61a1412ebe77ad7184ce18}{less\+Than} (\hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} \$other)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a385af5d8858164b5021661b7747ddcda}{less\+Than\+Or\+Equal} (\hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} \$other)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classSebastianBergmann_1_1Money_1_1Money_ab7b0b0eb1a4097d0edd14196f04be616}{from\+String} (\$value, \$currency)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a3f04a6e943e160cf11c34db2ace48010}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$amount, }
+\item[{}]{\$currency}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a3f04a6e943e160cf11c34db2ace48010}
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$amount} & \\
+\hline
+\textbackslash{}\+Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency | string & {\em \$currency} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+53     \{
+54         \textcolor{keywordflow}{if} (!is\_int($amount)) \{
+55             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} InvalidArgumentException(\textcolor{stringliteral}{'$amount must be an integer'});
+56         \}
+57 
+58         $this->amount   = $amount;
+59         $this->currency = $this->handleCurrencyArgument($currency);
+60     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a9b66787411ddea8330614ba621588740}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!add@{add}}
+\index{add@{add}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Money}}]{\$other}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a9b66787411ddea8330614ba621588740}
+Returns a new \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object that represents the monetary value of the sum of this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object and another.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money & {\em \$other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+147     \{
+148         $this->assertSameCurrency($this, $other);
+149 
+150         $value = $this->amount + $other->getAmount();
+151 
+152         $this->assertIsInteger($value);
+153 
+154         \textcolor{keywordflow}{return} $this->newMoney($value);
+155     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a8310fe689adbea74cd0c2183827ff691}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!allocate\+To\+Targets@{allocate\+To\+Targets}}
+\index{allocate\+To\+Targets@{allocate\+To\+Targets}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{allocate\+To\+Targets}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::allocate\+To\+Targets (
+\begin{DoxyParamCaption}
+\item[{}]{\$n}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a8310fe689adbea74cd0c2183827ff691}
+Allocate the monetary value represented by this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object among N targets.
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$n} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+221     \{
+222         \textcolor{keywordflow}{if} (!is\_int($n)) \{
+223             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} InvalidArgumentException(\textcolor{stringliteral}{'$n must be an integer'});
+224         \}
+225 
+226         $low       = $this->newMoney(intval($this->amount / $n));
+227         $high      = $this->newMoney($low->getAmount() + 1);
+228         $remainder = $this->amount % $n;
+229         $result    = array();
+230 
+231         \textcolor{keywordflow}{for} ($i = 0; $i < $remainder; $i++) \{
+232             $result[] = $high;
+233         \}
+234 
+235         \textcolor{keywordflow}{for} ($i = $remainder; $i < $n; $i++) \{
+236             $result[] = $low;
+237         \}
+238 
+239         \textcolor{keywordflow}{return} $result;
+240     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a00ef3fcca0a99e3bc9e027e994884db7}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!compare\+To@{compare\+To}}
+\index{compare\+To@{compare\+To}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{compare\+To}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::compare\+To (
+\begin{DoxyParamCaption}
+\item[{{\bf Money}}]{\$other}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a00ef3fcca0a99e3bc9e027e994884db7}
+Compares this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object to another.
+
+Returns an integer less than, equal to, or greater than zero if the value of this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object is considered to be respectively less than, equal to, or greater than the other \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money & {\em \$other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer -\/1$\vert$0$\vert$1 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+311     \{
+312         $this->assertSameCurrency($this, $other);
+313 
+314         \textcolor{keywordflow}{if} ($this->amount == $other->getAmount()) \{
+315             \textcolor{keywordflow}{return} 0;
+316         \}
+317 
+318         \textcolor{keywordflow}{return} $this->amount < $other->getAmount() ? -1 : 1;
+319     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a93fc402915121bb3e1bd1db9ce83be5c}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!equals@{equals}}
+\index{equals@{equals}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Money}}]{\$other}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a93fc402915121bb3e1bd1db9ce83be5c}
+Returns T\+R\+U\+E if this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object equals to another.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money & {\em \$other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+329     \{
+330         \textcolor{keywordflow}{return} $this->\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a00ef3fcca0a99e3bc9e027e994884db7}{compareTo}($other) == 0;
+331     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a6c7551fd271f031e54be8499bfdf745c}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!extract\+Percentage@{extract\+Percentage}}
+\index{extract\+Percentage@{extract\+Percentage}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{extract\+Percentage}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::extract\+Percentage (
+\begin{DoxyParamCaption}
+\item[{}]{\$percentage, }
+\item[{}]{\$rounding\+Mode = {\ttfamily PHP\+\_\+ROUND\+\_\+HALF\+\_\+UP}}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a6c7551fd271f031e54be8499bfdf745c}
+Extracts a percentage of the monetary value represented by this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object and returns an array of two \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} objects\+: \$original = \$result\mbox{[}\textquotesingle{}subtotal\textquotesingle{}\mbox{]} + \$result\mbox{[}\textquotesingle{}percentage\textquotesingle{}\mbox{]};
+
+Please note that this extracts the percentage out of a monetary value where the percentage is already included. If you want to get the percentage of the monetary value you should use multiplication (multiply(0.\+21), for instance, to calculate 21\% of a monetary value represented by a \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object) instead.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$percentage} & \\
+\hline
+integer & {\em \$rounding\+Mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/sebastianbergmann/money/issues/27}{\tt https\+://github.\+com/sebastianbergmann/money/issues/27} 
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+286     \{
+287         $percentage = $this->newMoney(
+288             $this->castToInt(
+289                 round($this->amount / (100 + $percentage) * $percentage, 0, $roundingMode)
+290             )
+291         );
+292 
+293         \textcolor{keywordflow}{return} array(
+294             \textcolor{stringliteral}{'percentage'} => $percentage,
+295             \textcolor{stringliteral}{'subtotal'}   => $this->\hyperlink{classSebastianBergmann_1_1Money_1_1Money_add1e9a81b23e648560cf265cedbd4600}{subtract}($percentage)
+296         );
+297     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_ab7b0b0eb1a4097d0edd14196f04be616}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!from\+String@{from\+String}}
+\index{from\+String@{from\+String}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{from\+String}]{\setlength{\rightskip}{0pt plus 5cm}static Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::from\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$value, }
+\item[{}]{\$currency}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classSebastianBergmann_1_1Money_1_1Money_ab7b0b0eb1a4097d0edd14196f04be616}
+Creates a \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object from a string such as \char`\"{}12.\+34\char`\"{}
+
+This method is designed to take into account the errors that can arise from manipulating floating point numbers.
+
+If the number of decimals in the string is higher than the currency\textquotesingle{}s number of fractional digits then the value will be rounded to the currency\textquotesingle{}s number of fractional digits.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\textbackslash{}\+Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency | string & {\em \$currency} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+78     \{
+79         \textcolor{keywordflow}{if} (!is\_string($value)) \{
+80             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} InvalidArgumentException(\textcolor{stringliteral}{'$value must be a string'});
+81         \}
+82 
+83         $currency = self::handleCurrencyArgument($currency);
+84 
+85         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \textcolor{keyword}{static}(
+86             intval(
+87                 round(
+88                     $currency->getSubUnit() *
+89                     round(
+90                         $value,
+91                         $currency->getDefaultFractionDigits(),
+92                         PHP\_ROUND\_HALF\_UP
+93                     ),
+94                     0,
+95                     PHP\_ROUND\_HALF\_UP
+96                 )
+97             ),
+98             $currency
+99         );
+100     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_ac33d55e50ba92bd98aa213315d1af201}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!get\+Amount@{get\+Amount}}
+\index{get\+Amount@{get\+Amount}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{get\+Amount}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::get\+Amount (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_ac33d55e50ba92bd98aa213315d1af201}
+Returns the monetary value represented by this object.
+
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+122     \{
+123         \textcolor{keywordflow}{return} $this->amount;
+124     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a27f9a4041099ab7f65f81865e7adb4c9}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!get\+Currency@{get\+Currency}}
+\index{get\+Currency@{get\+Currency}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{get\+Currency}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::get\+Currency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a27f9a4041099ab7f65f81865e7adb4c9}
+Returns the currency of the monetary value represented by this object.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+133     \{
+134         \textcolor{keywordflow}{return} $this->currency;
+135     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_ac6c6eb9c4e30fc7528d0d9dbdf6cae7e}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!greater\+Than@{greater\+Than}}
+\index{greater\+Than@{greater\+Than}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{greater\+Than}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::greater\+Than (
+\begin{DoxyParamCaption}
+\item[{{\bf Money}}]{\$other}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_ac6c6eb9c4e30fc7528d0d9dbdf6cae7e}
+Returns T\+R\+U\+E if the monetary value represented by this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object is greater than that of another, F\+A\+L\+S\+E otherwise.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money & {\em \$other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+342     \{
+343         \textcolor{keywordflow}{return} $this->\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a00ef3fcca0a99e3bc9e027e994884db7}{compareTo}($other) == 1;
+344     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a87172673727569ad1eb1cc310e6316af}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!greater\+Than\+Or\+Equal@{greater\+Than\+Or\+Equal}}
+\index{greater\+Than\+Or\+Equal@{greater\+Than\+Or\+Equal}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{greater\+Than\+Or\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::greater\+Than\+Or\+Equal (
+\begin{DoxyParamCaption}
+\item[{{\bf Money}}]{\$other}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a87172673727569ad1eb1cc310e6316af}
+Returns T\+R\+U\+E if the monetary value represented by this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object is greater than or equal that of another, F\+A\+L\+S\+E otherwise.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money & {\em \$other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+355     \{
+356         \textcolor{keywordflow}{return} $this->\hyperlink{classSebastianBergmann_1_1Money_1_1Money_ac6c6eb9c4e30fc7528d0d9dbdf6cae7e}{greaterThan}($other) || $this->\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a93fc402915121bb3e1bd1db9ce83be5c}{equals}($other);
+357     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a458d28890e8d2d7bdf47ea481ac9e639}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!json\+Serialize@{json\+Serialize}}
+\index{json\+Serialize@{json\+Serialize}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{json\+Serialize}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::json\+Serialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a458d28890e8d2d7bdf47ea481ac9e639}
+Specify data which should be serialized to J\+S\+O\+N
+
+\begin{DoxyReturn}{Returns}
+mixed data which can be serialized by {\bfseries json\+\_\+encode}, \hyperlink{}{http\+://php.\+net/manual/en/jsonserializable.\+jsonserialize.\+php}
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceJsonSerializable_a1ea2f3379f3e0c28ac0e2ce8256ec6ec}{Json\+Serializable}.
+
+
+\begin{DoxyCode}
+109     \{
+110         \textcolor{keywordflow}{return} array(
+111             \textcolor{stringliteral}{'amount'}   => $this->amount,
+112             \textcolor{stringliteral}{'currency'} => $this->currency->getCurrencyCode()
+113         );
+114     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a9d4b18b26e61a1412ebe77ad7184ce18}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!less\+Than@{less\+Than}}
+\index{less\+Than@{less\+Than}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{less\+Than}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::less\+Than (
+\begin{DoxyParamCaption}
+\item[{{\bf Money}}]{\$other}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a9d4b18b26e61a1412ebe77ad7184ce18}
+Returns T\+R\+U\+E if the monetary value represented by this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object is smaller than that of another, F\+A\+L\+S\+E otherwise.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money & {\em \$other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+368     \{
+369         \textcolor{keywordflow}{return} $this->\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a00ef3fcca0a99e3bc9e027e994884db7}{compareTo}($other) == -1;
+370     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a385af5d8858164b5021661b7747ddcda}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!less\+Than\+Or\+Equal@{less\+Than\+Or\+Equal}}
+\index{less\+Than\+Or\+Equal@{less\+Than\+Or\+Equal}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{less\+Than\+Or\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::less\+Than\+Or\+Equal (
+\begin{DoxyParamCaption}
+\item[{{\bf Money}}]{\$other}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a385af5d8858164b5021661b7747ddcda}
+Returns T\+R\+U\+E if the monetary value represented by this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object is smaller than or equal that of another, F\+A\+L\+S\+E otherwise.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money & {\em \$other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+381     \{
+382         \textcolor{keywordflow}{return} $this->\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a9d4b18b26e61a1412ebe77ad7184ce18}{lessThan}($other) || $this->\hyperlink{classSebastianBergmann_1_1Money_1_1Money_a93fc402915121bb3e1bd1db9ce83be5c}{equals}($other);
+383     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_a9d1710f6bf5ef8170bb6a8185032f0b9}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!multiply@{multiply}}
+\index{multiply@{multiply}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{multiply}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::multiply (
+\begin{DoxyParamCaption}
+\item[{}]{\$factor, }
+\item[{}]{\$rounding\+Mode = {\ttfamily PHP\+\_\+ROUND\+\_\+HALF\+\_\+UP}}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_a9d1710f6bf5ef8170bb6a8185032f0b9}
+Returns a new \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object that represents the monetary value of this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object multiplied by a given factor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$factor} & \\
+\hline
+integer & {\em \$rounding\+Mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+198     \{
+199         \textcolor{keywordflow}{if} (!in\_array($roundingMode, self::$roundingModes)) \{
+200             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} InvalidArgumentException(
+201                 \textcolor{stringliteral}{'$roundingMode must be a valid rounding mode (PHP\_ROUND\_*)'}
+202             );
+203         \}
+204 
+205         \textcolor{keywordflow}{return} $this->newMoney(
+206             $this->castToInt(
+207                 round($factor * $this->amount, 0, $roundingMode)
+208             )
+209         );
+210     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_ae33f2e70c564a2eb62a58f92192e51bc}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!negate@{negate}}
+\index{negate@{negate}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{negate}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::negate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_ae33f2e70c564a2eb62a58f92192e51bc}
+Returns a new \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object that represents the negated monetary value of this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object.
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+184     \{
+185         \textcolor{keywordflow}{return} $this->newMoney(-1 * $this->amount);
+186     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Money_add1e9a81b23e648560cf265cedbd4600}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}!subtract@{subtract}}
+\index{subtract@{subtract}!Sebastian\+Bergmann\+::\+Money\+::\+Money@{Sebastian\+Bergmann\+::\+Money\+::\+Money}}
+\subsubsection[{subtract}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money\+::subtract (
+\begin{DoxyParamCaption}
+\item[{{\bf Money}}]{\$other}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Money_add1e9a81b23e648560cf265cedbd4600}
+Returns a new \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object that represents the monetary value of the difference of this \hyperlink{classSebastianBergmann_1_1Money_1_1Money}{Money} object and another.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Money & {\em \$other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+167     \{
+168         $this->assertSameCurrency($this, $other);
+169 
+170         $value = $this->amount - $other->getAmount();
+171 
+172         $this->assertIsInteger($value);
+173 
+174         \textcolor{keywordflow}{return} $this->newMoney($value);
+175     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Money.\+php\end{DoxyCompactItemize}

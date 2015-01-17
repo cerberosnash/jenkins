@@ -1,0 +1,40 @@
+\hypertarget{classSebastianBergmann_1_1Money_1_1IntlFormatterTest}{}\section{Sebastian\+Bergmann\textbackslash{}Money\textbackslash{}Intl\+Formatter\+Test Class Reference}
+\label{classSebastianBergmann_1_1Money_1_1IntlFormatterTest}\index{Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Intl\+Formatter\+Test@{Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Intl\+Formatter\+Test}}
+Inheritance diagram for Sebastian\+Bergmann\textbackslash{}Money\textbackslash{}Intl\+Formatter\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSebastianBergmann_1_1Money_1_1IntlFormatterTest}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1IntlFormatterTest_ac597ee0b10671fcabc138226af36fb41}{test\+Money\+Object\+Can\+Be\+Formatted\+As\+String} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSebastianBergmann_1_1Money_1_1IntlFormatterTest_ac597ee0b10671fcabc138226af36fb41}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Intl\+Formatter\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Intl\+Formatter\+Test}!test\+Money\+Object\+Can\+Be\+Formatted\+As\+String@{test\+Money\+Object\+Can\+Be\+Formatted\+As\+String}}
+\index{test\+Money\+Object\+Can\+Be\+Formatted\+As\+String@{test\+Money\+Object\+Can\+Be\+Formatted\+As\+String}!Sebastian\+Bergmann\+::\+Money\+::\+Intl\+Formatter\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Intl\+Formatter\+Test}}
+\subsubsection[{test\+Money\+Object\+Can\+Be\+Formatted\+As\+String}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Intl\+Formatter\+Test\+::test\+Money\+Object\+Can\+Be\+Formatted\+As\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1IntlFormatterTest_ac597ee0b10671fcabc138226af36fb41}
+\+::\+\_\+\+\_\+construct  \+::format     
+\begin{DoxyCode}
+22     \{
+23         $f = \textcolor{keyword}{new} IntlFormatter(\textcolor{stringliteral}{'de\_DE'});
+24         $m = \textcolor{keyword}{new} \hyperlink{namespaceMoney}{Money}(100, \textcolor{keyword}{new} Currency(\textcolor{stringliteral}{'EUR'}));
+25 
+26         $this->assertEquals(\textcolor{stringliteral}{'1,00 €'}, $f->format($m));
+27     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tests/Intl\+Formatter\+Test.\+php\end{DoxyCompactItemize}

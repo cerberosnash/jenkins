@@ -1,0 +1,189 @@
+\hypertarget{classSebastianBergmann_1_1Money_1_1CurrencyTest}{}\section{Sebastian\+Bergmann\textbackslash{}Money\textbackslash{}Currency\+Test Class Reference}
+\label{classSebastianBergmann_1_1Money_1_1CurrencyTest}\index{Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test@{Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test}}
+Inheritance diagram for Sebastian\+Bergmann\textbackslash{}Money\textbackslash{}Currency\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSebastianBergmann_1_1Money_1_1CurrencyTest}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1CurrencyTest_a17d231f2f0fd7811315590393b549175}{test\+Exception\+Is\+Raised\+For\+Invalid\+Constructor\+Argument} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1CurrencyTest_ad3be72b37306b9f77812eeec54533606}{test\+Can\+Be\+Constructed\+From\+Uppercase\+String} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1CurrencyTest_aa82d7dff3050f2a3cd07f5f015796e4d}{test\+Can\+Be\+Constructed\+From\+Lowercase\+String} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1CurrencyTest_a380803c1311b8fa89696d963835093f2}{test\+Custom\+Currency\+Can\+Be\+Registered} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1CurrencyTest_ad857c5bc4c304ce75db7b26a26c62a58}{test\+Can\+Be\+Cast\+To\+String} (\hyperlink{classSebastianBergmann_1_1Money_1_1Currency}{Currency} \$c)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1CurrencyTest_a8a62f51dfe466c98f757f173e2459d2f}{test\+Currency\+Code\+Can\+Be\+Retrieved} (\hyperlink{classSebastianBergmann_1_1Money_1_1Currency}{Currency} \$c)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1CurrencyTest_ae64969e4bab6c78e29fec1d9a63797d7}{test\+Default\+Fraction\+Digits\+Can\+Be\+Retrieved} (\hyperlink{classSebastianBergmann_1_1Money_1_1Currency}{Currency} \$c)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1CurrencyTest_a469a205683f76b52e867f94367aec6de}{test\+Display\+Name\+Can\+Be\+Retrieved} (\hyperlink{classSebastianBergmann_1_1Money_1_1Currency}{Currency} \$c)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1CurrencyTest_ae3a7cfb35cff2f86660961e02e027ad3}{test\+Numeric\+Code\+Can\+Be\+Retrieved} (\hyperlink{classSebastianBergmann_1_1Money_1_1Currency}{Currency} \$c)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1CurrencyTest_a5bf84e253c155387aabd19299c1ea555}{test\+Sub\+Unit\+Can\+Be\+Retrieved} (\hyperlink{classSebastianBergmann_1_1Money_1_1Currency}{Currency} \$c)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSebastianBergmann_1_1Money_1_1CurrencyTest_ad857c5bc4c304ce75db7b26a26c62a58}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}!test\+Can\+Be\+Cast\+To\+String@{test\+Can\+Be\+Cast\+To\+String}}
+\index{test\+Can\+Be\+Cast\+To\+String@{test\+Can\+Be\+Cast\+To\+String}!Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}}
+\subsubsection[{test\+Can\+Be\+Cast\+To\+String}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test\+::test\+Can\+Be\+Cast\+To\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf Currency}}]{\$c}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1CurrencyTest_ad857c5bc4c304ce75db7b26a26c62a58}
+\+::\+\_\+\+\_\+to\+String  test\+Can\+Be\+Constructed\+From\+Uppercase\+String 
+\begin{DoxyCode}
+72     \{
+73         $this->assertEquals(\textcolor{stringliteral}{'EUR'}, (\textcolor{keywordtype}{string})$c);
+74     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1CurrencyTest_aa82d7dff3050f2a3cd07f5f015796e4d}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}!test\+Can\+Be\+Constructed\+From\+Lowercase\+String@{test\+Can\+Be\+Constructed\+From\+Lowercase\+String}}
+\index{test\+Can\+Be\+Constructed\+From\+Lowercase\+String@{test\+Can\+Be\+Constructed\+From\+Lowercase\+String}!Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}}
+\subsubsection[{test\+Can\+Be\+Constructed\+From\+Lowercase\+String}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test\+::test\+Can\+Be\+Constructed\+From\+Lowercase\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1CurrencyTest_aa82d7dff3050f2a3cd07f5f015796e4d}
+\+::\+\_\+\+\_\+construct 
+\begin{DoxyCode}
+40     \{
+41         $c = \textcolor{keyword}{new} Currency(\textcolor{stringliteral}{'eur'});
+42 
+43         $this->assertInstanceOf(\textcolor{stringliteral}{'SebastianBergmann\(\backslash\)\(\backslash\)Money\(\backslash\)\(\backslash\)Currency'}, $c);
+44     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1CurrencyTest_ad3be72b37306b9f77812eeec54533606}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}!test\+Can\+Be\+Constructed\+From\+Uppercase\+String@{test\+Can\+Be\+Constructed\+From\+Uppercase\+String}}
+\index{test\+Can\+Be\+Constructed\+From\+Uppercase\+String@{test\+Can\+Be\+Constructed\+From\+Uppercase\+String}!Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}}
+\subsubsection[{test\+Can\+Be\+Constructed\+From\+Uppercase\+String}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test\+::test\+Can\+Be\+Constructed\+From\+Uppercase\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1CurrencyTest_ad3be72b37306b9f77812eeec54533606}
+\+::\+\_\+\+\_\+construct 
+\begin{DoxyCode}
+28     \{
+29         $c = \textcolor{keyword}{new} Currency(\textcolor{stringliteral}{'EUR'});
+30 
+31         $this->assertInstanceOf(\textcolor{stringliteral}{'SebastianBergmann\(\backslash\)\(\backslash\)Money\(\backslash\)\(\backslash\)Currency'}, $c);
+32 
+33         \textcolor{keywordflow}{return} $c;
+34     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1CurrencyTest_a8a62f51dfe466c98f757f173e2459d2f}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}!test\+Currency\+Code\+Can\+Be\+Retrieved@{test\+Currency\+Code\+Can\+Be\+Retrieved}}
+\index{test\+Currency\+Code\+Can\+Be\+Retrieved@{test\+Currency\+Code\+Can\+Be\+Retrieved}!Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}}
+\subsubsection[{test\+Currency\+Code\+Can\+Be\+Retrieved}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test\+::test\+Currency\+Code\+Can\+Be\+Retrieved (
+\begin{DoxyParamCaption}
+\item[{{\bf Currency}}]{\$c}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1CurrencyTest_a8a62f51dfe466c98f757f173e2459d2f}
+\+::get\+Currency\+Code  test\+Can\+Be\+Constructed\+From\+Uppercase\+String 
+\begin{DoxyCode}
+81     \{
+82         $this->assertEquals(\textcolor{stringliteral}{'EUR'}, $c->getCurrencyCode());
+83     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1CurrencyTest_a380803c1311b8fa89696d963835093f2}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}!test\+Custom\+Currency\+Can\+Be\+Registered@{test\+Custom\+Currency\+Can\+Be\+Registered}}
+\index{test\+Custom\+Currency\+Can\+Be\+Registered@{test\+Custom\+Currency\+Can\+Be\+Registered}!Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}}
+\subsubsection[{test\+Custom\+Currency\+Can\+Be\+Registered}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test\+::test\+Custom\+Currency\+Can\+Be\+Registered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1CurrencyTest_a380803c1311b8fa89696d963835093f2}
+enabled  \+::add\+Currency  \+::\+\_\+\+\_\+construct 
+\begin{DoxyCode}
+52     \{
+53         \hyperlink{classSebastianBergmann_1_1Money_1_1Currency_ab8e1c72902a3af3dffcab39bcf2ba3da}{Currency::addCurrency}(
+54             \textcolor{stringliteral}{'BTC'},
+55             \textcolor{stringliteral}{'Bitcoin'},
+56             999,
+57             4,
+58             1000
+59         );
+60 
+61         $this->assertInstanceOf(
+62             \textcolor{stringliteral}{'SebastianBergmann\(\backslash\)Money\(\backslash\)Currency'},
+63             \textcolor{keyword}{new} Currency(\textcolor{stringliteral}{'BTC'})
+64         );
+65     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1CurrencyTest_ae64969e4bab6c78e29fec1d9a63797d7}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}!test\+Default\+Fraction\+Digits\+Can\+Be\+Retrieved@{test\+Default\+Fraction\+Digits\+Can\+Be\+Retrieved}}
+\index{test\+Default\+Fraction\+Digits\+Can\+Be\+Retrieved@{test\+Default\+Fraction\+Digits\+Can\+Be\+Retrieved}!Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}}
+\subsubsection[{test\+Default\+Fraction\+Digits\+Can\+Be\+Retrieved}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test\+::test\+Default\+Fraction\+Digits\+Can\+Be\+Retrieved (
+\begin{DoxyParamCaption}
+\item[{{\bf Currency}}]{\$c}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1CurrencyTest_ae64969e4bab6c78e29fec1d9a63797d7}
+\+::get\+Default\+Fraction\+Digits  test\+Can\+Be\+Constructed\+From\+Uppercase\+String 
+\begin{DoxyCode}
+90     \{
+91         $this->assertEquals(2, $c->getDefaultFractionDigits());
+92     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1CurrencyTest_a469a205683f76b52e867f94367aec6de}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}!test\+Display\+Name\+Can\+Be\+Retrieved@{test\+Display\+Name\+Can\+Be\+Retrieved}}
+\index{test\+Display\+Name\+Can\+Be\+Retrieved@{test\+Display\+Name\+Can\+Be\+Retrieved}!Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}}
+\subsubsection[{test\+Display\+Name\+Can\+Be\+Retrieved}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test\+::test\+Display\+Name\+Can\+Be\+Retrieved (
+\begin{DoxyParamCaption}
+\item[{{\bf Currency}}]{\$c}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1CurrencyTest_a469a205683f76b52e867f94367aec6de}
+\+::get\+Display\+Name  test\+Can\+Be\+Constructed\+From\+Uppercase\+String 
+\begin{DoxyCode}
+99     \{
+100         $this->assertEquals(\textcolor{stringliteral}{'Euro'}, $c->getDisplayName());
+101     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1CurrencyTest_a17d231f2f0fd7811315590393b549175}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}!test\+Exception\+Is\+Raised\+For\+Invalid\+Constructor\+Argument@{test\+Exception\+Is\+Raised\+For\+Invalid\+Constructor\+Argument}}
+\index{test\+Exception\+Is\+Raised\+For\+Invalid\+Constructor\+Argument@{test\+Exception\+Is\+Raised\+For\+Invalid\+Constructor\+Argument}!Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}}
+\subsubsection[{test\+Exception\+Is\+Raised\+For\+Invalid\+Constructor\+Argument}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test\+::test\+Exception\+Is\+Raised\+For\+Invalid\+Constructor\+Argument (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1CurrencyTest_a17d231f2f0fd7811315590393b549175}
+\+::\+\_\+\+\_\+construct   
+\begin{DoxyCode}
+20     \{
+21         \textcolor{keyword}{new} Currency(null);
+22     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1CurrencyTest_ae3a7cfb35cff2f86660961e02e027ad3}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}!test\+Numeric\+Code\+Can\+Be\+Retrieved@{test\+Numeric\+Code\+Can\+Be\+Retrieved}}
+\index{test\+Numeric\+Code\+Can\+Be\+Retrieved@{test\+Numeric\+Code\+Can\+Be\+Retrieved}!Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}}
+\subsubsection[{test\+Numeric\+Code\+Can\+Be\+Retrieved}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test\+::test\+Numeric\+Code\+Can\+Be\+Retrieved (
+\begin{DoxyParamCaption}
+\item[{{\bf Currency}}]{\$c}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1CurrencyTest_ae3a7cfb35cff2f86660961e02e027ad3}
+\+::get\+Numeric\+Code  test\+Can\+Be\+Constructed\+From\+Uppercase\+String 
+\begin{DoxyCode}
+108     \{
+109         $this->assertEquals(978, $c->getNumericCode());
+110     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1CurrencyTest_a5bf84e253c155387aabd19299c1ea555}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}!test\+Sub\+Unit\+Can\+Be\+Retrieved@{test\+Sub\+Unit\+Can\+Be\+Retrieved}}
+\index{test\+Sub\+Unit\+Can\+Be\+Retrieved@{test\+Sub\+Unit\+Can\+Be\+Retrieved}!Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test@{Sebastian\+Bergmann\+::\+Money\+::\+Currency\+Test}}
+\subsubsection[{test\+Sub\+Unit\+Can\+Be\+Retrieved}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+Test\+::test\+Sub\+Unit\+Can\+Be\+Retrieved (
+\begin{DoxyParamCaption}
+\item[{{\bf Currency}}]{\$c}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1CurrencyTest_a5bf84e253c155387aabd19299c1ea555}
+\+::get\+Sub\+Unit  test\+Can\+Be\+Constructed\+From\+Uppercase\+String 
+\begin{DoxyCode}
+117     \{
+118         $this->assertEquals(100, $c->getSubUnit());
+119     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tests/Currency\+Test.\+php\end{DoxyCompactItemize}

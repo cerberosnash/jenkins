@@ -1,0 +1,214 @@
+\hypertarget{classSebastianBergmann_1_1Money_1_1Currency}{}\section{Sebastian\+Bergmann\textbackslash{}Money\textbackslash{}Currency Class Reference}
+\label{classSebastianBergmann_1_1Money_1_1Currency}\index{Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency@{Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Currency_afe975f84e8b479055375469f71e4fa5b}{\+\_\+\+\_\+construct} (\$currency\+Code)
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Currency_a4ab32fe055c445eaf8ab40edd41eba8f}{get\+Currency\+Code} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Currency_af251b45afbf808f12e32ffde785cd0c3}{get\+Default\+Fraction\+Digits} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Currency_a07106701e9a6d8498c05e1807bd0b91c}{get\+Display\+Name} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Currency_a4677bf160dd6f4ba40b773c40ed93aa5}{get\+Numeric\+Code} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Currency_a9a59ab551c29ac49ffe9e575334d1470}{get\+Sub\+Unit} ()
+\item 
+\hyperlink{classSebastianBergmann_1_1Money_1_1Currency_a1df79154ee65743ea10d076a88cebc6e}{\+\_\+\+\_\+to\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classSebastianBergmann_1_1Money_1_1Currency_ab8e1c72902a3af3dffcab39bcf2ba3da}{add\+Currency} (\$code, \$display\+Name, \$numeric\+Code, \$default\+Fraction\+Digits, \$sub\+Unit)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Currency_afe975f84e8b479055375469f71e4fa5b}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$currency\+Code}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Currency_afe975f84e8b479055375469f71e4fa5b}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$currency\+Code} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+1136     \{
+1137         \textcolor{keywordflow}{if} (!isset(self::$currencies[$currencyCode])) \{
+1138             $currencyCode = strtoupper($currencyCode);
+1139         \}
+1140 
+1141         \textcolor{keywordflow}{if} (!isset(self::$currencies[$currencyCode])) \{
+1142             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} InvalidArgumentException(
+1143                 sprintf(\textcolor{stringliteral}{'Unknown currency code "%s"'}, $currencyCode)
+1144             );
+1145         \}
+1146 
+1147         $this->currencyCode = $currencyCode;
+1148     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Currency_a1df79154ee65743ea10d076a88cebc6e}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}!\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}}
+\index{\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}!Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}}
+\subsubsection[{\+\_\+\+\_\+to\+String}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+::\+\_\+\+\_\+to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Currency_a1df79154ee65743ea10d076a88cebc6e}
+Returns the I\+S\+O 4217 currency code of this currency.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+1224     \{
+1225         \textcolor{keywordflow}{return} $this->currencyCode;
+1226     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Currency_ab8e1c72902a3af3dffcab39bcf2ba3da}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}!add\+Currency@{add\+Currency}}
+\index{add\+Currency@{add\+Currency}!Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}}
+\subsubsection[{add\+Currency}]{\setlength{\rightskip}{0pt plus 5cm}static Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+::add\+Currency (
+\begin{DoxyParamCaption}
+\item[{}]{\$code, }
+\item[{}]{\$display\+Name, }
+\item[{}]{\$numeric\+Code, }
+\item[{}]{\$default\+Fraction\+Digits, }
+\item[{}]{\$sub\+Unit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classSebastianBergmann_1_1Money_1_1Currency_ab8e1c72902a3af3dffcab39bcf2ba3da}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & \\
+\hline
+string & {\em \$display\+Name} & \\
+\hline
+integer & {\em \$numeric\+Code} & \\
+\hline
+integer & {\em \$default\+Fraction\+Digits} & \\
+\hline
+integer & {\em \$sub\+Unit} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+1158     \{
+1159         self::$currencies[$code] = array(
+1160             \textcolor{stringliteral}{'display\_name'} => $displayName,
+1161             \textcolor{stringliteral}{'numeric\_code'} => $numericCode,
+1162             \textcolor{stringliteral}{'default\_fraction\_digits'} => $defaultFractionDigits,
+1163             \textcolor{stringliteral}{'sub\_unit'} => $subUnit,
+1164         );
+1165     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Currency_a4ab32fe055c445eaf8ab40edd41eba8f}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}!get\+Currency\+Code@{get\+Currency\+Code}}
+\index{get\+Currency\+Code@{get\+Currency\+Code}!Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}}
+\subsubsection[{get\+Currency\+Code}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+::get\+Currency\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Currency_a4ab32fe055c445eaf8ab40edd41eba8f}
+Returns the I\+S\+O 4217 currency code of this currency.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+1173     \{
+1174         \textcolor{keywordflow}{return} $this->currencyCode;
+1175     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Currency_af251b45afbf808f12e32ffde785cd0c3}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}!get\+Default\+Fraction\+Digits@{get\+Default\+Fraction\+Digits}}
+\index{get\+Default\+Fraction\+Digits@{get\+Default\+Fraction\+Digits}!Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}}
+\subsubsection[{get\+Default\+Fraction\+Digits}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+::get\+Default\+Fraction\+Digits (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Currency_af251b45afbf808f12e32ffde785cd0c3}
+Returns the default number of fraction digits used with this currency.
+
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+1184     \{
+1185         \textcolor{keywordflow}{return} self::$currencies[$this->currencyCode][\textcolor{stringliteral}{'default\_fraction\_digits'}];
+1186     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Currency_a07106701e9a6d8498c05e1807bd0b91c}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}!get\+Display\+Name@{get\+Display\+Name}}
+\index{get\+Display\+Name@{get\+Display\+Name}!Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}}
+\subsubsection[{get\+Display\+Name}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+::get\+Display\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Currency_a07106701e9a6d8498c05e1807bd0b91c}
+Returns the name that is suitable for displaying this currency.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+1194     \{
+1195         \textcolor{keywordflow}{return} self::$currencies[$this->currencyCode][\textcolor{stringliteral}{'display\_name'}];
+1196     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Currency_a4677bf160dd6f4ba40b773c40ed93aa5}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}!get\+Numeric\+Code@{get\+Numeric\+Code}}
+\index{get\+Numeric\+Code@{get\+Numeric\+Code}!Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}}
+\subsubsection[{get\+Numeric\+Code}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+::get\+Numeric\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Currency_a4677bf160dd6f4ba40b773c40ed93aa5}
+Returns the I\+S\+O 4217 numeric code of this currency.
+
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+1204     \{
+1205         \textcolor{keywordflow}{return} self::$currencies[$this->currencyCode][\textcolor{stringliteral}{'numeric\_code'}];
+1206     \}
+\end{DoxyCode}
+\hypertarget{classSebastianBergmann_1_1Money_1_1Currency_a9a59ab551c29ac49ffe9e575334d1470}{}\index{Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}!get\+Sub\+Unit@{get\+Sub\+Unit}}
+\index{get\+Sub\+Unit@{get\+Sub\+Unit}!Sebastian\+Bergmann\+::\+Money\+::\+Currency@{Sebastian\+Bergmann\+::\+Money\+::\+Currency}}
+\subsubsection[{get\+Sub\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}Sebastian\+Bergmann\textbackslash{}\+Money\textbackslash{}\+Currency\+::get\+Sub\+Unit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classSebastianBergmann_1_1Money_1_1Currency_a9a59ab551c29ac49ffe9e575334d1470}
+Returns the I\+S\+O 4217 numeric code of this currency.
+
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+1214     \{
+1215         \textcolor{keywordflow}{return} self::$currencies[$this->currencyCode][\textcolor{stringliteral}{'sub\_unit'}];
+1216     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Currency.\+php\end{DoxyCompactItemize}

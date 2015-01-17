@@ -1,0 +1,925 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 8394.495413
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.059563 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 183 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text `arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col `arg1' to `arg2' of row `arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(SebastianBergmann\Money\Money) cw
+(JsonSerializable) cw
+(SebastianBergmann\Money\AED) cw
+(SebastianBergmann\Money\AFN) cw
+(SebastianBergmann\Money\ALL) cw
+(SebastianBergmann\Money\AMD) cw
+(SebastianBergmann\Money\ANG) cw
+(SebastianBergmann\Money\AOA) cw
+(SebastianBergmann\Money\ARS) cw
+(SebastianBergmann\Money\AUD) cw
+(SebastianBergmann\Money\AWG) cw
+(SebastianBergmann\Money\AZN) cw
+(SebastianBergmann\Money\BAM) cw
+(SebastianBergmann\Money\BBD) cw
+(SebastianBergmann\Money\BDT) cw
+(SebastianBergmann\Money\BGN) cw
+(SebastianBergmann\Money\BHD) cw
+(SebastianBergmann\Money\BIF) cw
+(SebastianBergmann\Money\BMD) cw
+(SebastianBergmann\Money\BND) cw
+(SebastianBergmann\Money\BOB) cw
+(SebastianBergmann\Money\BOV) cw
+(SebastianBergmann\Money\BRL) cw
+(SebastianBergmann\Money\BSD) cw
+(SebastianBergmann\Money\BTN) cw
+(SebastianBergmann\Money\BWP) cw
+(SebastianBergmann\Money\BYR) cw
+(SebastianBergmann\Money\BZD) cw
+(SebastianBergmann\Money\CAD) cw
+(SebastianBergmann\Money\CDF) cw
+(SebastianBergmann\Money\CHE) cw
+(SebastianBergmann\Money\CHF) cw
+(SebastianBergmann\Money\CHW) cw
+(SebastianBergmann\Money\CLF) cw
+(SebastianBergmann\Money\CLP) cw
+(SebastianBergmann\Money\CNY) cw
+(SebastianBergmann\Money\COP) cw
+(SebastianBergmann\Money\COU) cw
+(SebastianBergmann\Money\CRC) cw
+(SebastianBergmann\Money\CUC) cw
+(SebastianBergmann\Money\CUP) cw
+(SebastianBergmann\Money\CVE) cw
+(SebastianBergmann\Money\CZK) cw
+(SebastianBergmann\Money\DJF) cw
+(SebastianBergmann\Money\DKK) cw
+(SebastianBergmann\Money\DOP) cw
+(SebastianBergmann\Money\DZD) cw
+(SebastianBergmann\Money\EGP) cw
+(SebastianBergmann\Money\ERN) cw
+(SebastianBergmann\Money\ETB) cw
+(SebastianBergmann\Money\EUR) cw
+(SebastianBergmann\Money\FJD) cw
+(SebastianBergmann\Money\FKP) cw
+(SebastianBergmann\Money\GBP) cw
+(SebastianBergmann\Money\GEL) cw
+(SebastianBergmann\Money\GHS) cw
+(SebastianBergmann\Money\GIP) cw
+(SebastianBergmann\Money\GMD) cw
+(SebastianBergmann\Money\GNF) cw
+(SebastianBergmann\Money\GTQ) cw
+(SebastianBergmann\Money\GYD) cw
+(SebastianBergmann\Money\HKD) cw
+(SebastianBergmann\Money\HNL) cw
+(SebastianBergmann\Money\HRK) cw
+(SebastianBergmann\Money\HTG) cw
+(SebastianBergmann\Money\HUF) cw
+(SebastianBergmann\Money\IDR) cw
+(SebastianBergmann\Money\ILS) cw
+(SebastianBergmann\Money\INR) cw
+(SebastianBergmann\Money\IQD) cw
+(SebastianBergmann\Money\IRR) cw
+(SebastianBergmann\Money\ISK) cw
+(SebastianBergmann\Money\JMD) cw
+(SebastianBergmann\Money\JOD) cw
+(SebastianBergmann\Money\JPY) cw
+(SebastianBergmann\Money\KES) cw
+(SebastianBergmann\Money\KGS) cw
+(SebastianBergmann\Money\KHR) cw
+(SebastianBergmann\Money\KMF) cw
+(SebastianBergmann\Money\KPW) cw
+(SebastianBergmann\Money\KRW) cw
+(SebastianBergmann\Money\KWD) cw
+(SebastianBergmann\Money\KYD) cw
+(SebastianBergmann\Money\KZT) cw
+(SebastianBergmann\Money\LAK) cw
+(SebastianBergmann\Money\LBP) cw
+(SebastianBergmann\Money\LKR) cw
+(SebastianBergmann\Money\LRD) cw
+(SebastianBergmann\Money\LSL) cw
+(SebastianBergmann\Money\LTL) cw
+(SebastianBergmann\Money\LVL) cw
+(SebastianBergmann\Money\LYD) cw
+(SebastianBergmann\Money\MAD) cw
+(SebastianBergmann\Money\MDL) cw
+(SebastianBergmann\Money\MGA) cw
+(SebastianBergmann\Money\MKD) cw
+(SebastianBergmann\Money\MMK) cw
+(SebastianBergmann\Money\MNT) cw
+(SebastianBergmann\Money\MOP) cw
+(SebastianBergmann\Money\MRO) cw
+(SebastianBergmann\Money\MUR) cw
+(SebastianBergmann\Money\MVR) cw
+(SebastianBergmann\Money\MWK) cw
+(SebastianBergmann\Money\MXN) cw
+(SebastianBergmann\Money\MXV) cw
+(SebastianBergmann\Money\MYR) cw
+(SebastianBergmann\Money\MZN) cw
+(SebastianBergmann\Money\NAD) cw
+(SebastianBergmann\Money\NGN) cw
+(SebastianBergmann\Money\NIO) cw
+(SebastianBergmann\Money\NOK) cw
+(SebastianBergmann\Money\NPR) cw
+(SebastianBergmann\Money\NZD) cw
+(SebastianBergmann\Money\OMR) cw
+(SebastianBergmann\Money\PAB) cw
+(SebastianBergmann\Money\PEN) cw
+(SebastianBergmann\Money\PGK) cw
+(SebastianBergmann\Money\PHP) cw
+(SebastianBergmann\Money\PKR) cw
+(SebastianBergmann\Money\PLN) cw
+(SebastianBergmann\Money\PYG) cw
+(SebastianBergmann\Money\QAR) cw
+(SebastianBergmann\Money\RON) cw
+(SebastianBergmann\Money\RSD) cw
+(SebastianBergmann\Money\RUB) cw
+(SebastianBergmann\Money\RWF) cw
+(SebastianBergmann\Money\SAR) cw
+(SebastianBergmann\Money\SBD) cw
+(SebastianBergmann\Money\SCR) cw
+(SebastianBergmann\Money\SDG) cw
+(SebastianBergmann\Money\SEK) cw
+(SebastianBergmann\Money\SGD) cw
+(SebastianBergmann\Money\SHP) cw
+(SebastianBergmann\Money\SLL) cw
+(SebastianBergmann\Money\SOS) cw
+(SebastianBergmann\Money\SRD) cw
+(SebastianBergmann\Money\SSP) cw
+(SebastianBergmann\Money\STD) cw
+(SebastianBergmann\Money\SVC) cw
+(SebastianBergmann\Money\SYP) cw
+(SebastianBergmann\Money\SZL) cw
+(SebastianBergmann\Money\THB) cw
+(SebastianBergmann\Money\TJS) cw
+(SebastianBergmann\Money\TMT) cw
+(SebastianBergmann\Money\TND) cw
+(SebastianBergmann\Money\TOP) cw
+(SebastianBergmann\Money\TTD) cw
+(SebastianBergmann\Money\TWD) cw
+(SebastianBergmann\Money\TZS) cw
+(SebastianBergmann\Money\UAH) cw
+(SebastianBergmann\Money\UGX) cw
+(SebastianBergmann\Money\USD) cw
+(SebastianBergmann\Money\USN) cw
+(SebastianBergmann\Money\USS) cw
+(SebastianBergmann\Money\UYI) cw
+(SebastianBergmann\Money\UYU) cw
+(SebastianBergmann\Money\UZS) cw
+(SebastianBergmann\Money\VEF) cw
+(SebastianBergmann\Money\VND) cw
+(SebastianBergmann\Money\VUV) cw
+(SebastianBergmann\Money\WST) cw
+(SebastianBergmann\Money\XAF) cw
+(SebastianBergmann\Money\XAG) cw
+(SebastianBergmann\Money\XAU) cw
+(SebastianBergmann\Money\XBA) cw
+(SebastianBergmann\Money\XBB) cw
+(SebastianBergmann\Money\XBC) cw
+(SebastianBergmann\Money\XBD) cw
+(SebastianBergmann\Money\XCD) cw
+(SebastianBergmann\Money\XDR) cw
+(SebastianBergmann\Money\XFU) cw
+(SebastianBergmann\Money\XOF) cw
+(SebastianBergmann\Money\XPD) cw
+(SebastianBergmann\Money\XPF) cw
+(SebastianBergmann\Money\XPT) cw
+(SebastianBergmann\Money\XSU) cw
+(SebastianBergmann\Money\XTS) cw
+(SebastianBergmann\Money\XUA) cw
+(SebastianBergmann\Money\XXX) cw
+(SebastianBergmann\Money\YER) cw
+(SebastianBergmann\Money\ZAR) cw
+(SebastianBergmann\Money\ZMW) cw
+(SebastianBergmann\Money\ZWL) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (SebastianBergmann\Money\Money) 0.000000 181.000000 box
+ (JsonSerializable) 0.000000 182.000000 box
+ (SebastianBergmann\Money\AED) 1.000000 180.000000 box
+ (SebastianBergmann\Money\AFN) 1.000000 179.000000 box
+ (SebastianBergmann\Money\ALL) 1.000000 178.000000 box
+ (SebastianBergmann\Money\AMD) 1.000000 177.000000 box
+ (SebastianBergmann\Money\ANG) 1.000000 176.000000 box
+ (SebastianBergmann\Money\AOA) 1.000000 175.000000 box
+ (SebastianBergmann\Money\ARS) 1.000000 174.000000 box
+ (SebastianBergmann\Money\AUD) 1.000000 173.000000 box
+ (SebastianBergmann\Money\AWG) 1.000000 172.000000 box
+ (SebastianBergmann\Money\AZN) 1.000000 171.000000 box
+ (SebastianBergmann\Money\BAM) 1.000000 170.000000 box
+ (SebastianBergmann\Money\BBD) 1.000000 169.000000 box
+ (SebastianBergmann\Money\BDT) 1.000000 168.000000 box
+ (SebastianBergmann\Money\BGN) 1.000000 167.000000 box
+ (SebastianBergmann\Money\BHD) 1.000000 166.000000 box
+ (SebastianBergmann\Money\BIF) 1.000000 165.000000 box
+ (SebastianBergmann\Money\BMD) 1.000000 164.000000 box
+ (SebastianBergmann\Money\BND) 1.000000 163.000000 box
+ (SebastianBergmann\Money\BOB) 1.000000 162.000000 box
+ (SebastianBergmann\Money\BOV) 1.000000 161.000000 box
+ (SebastianBergmann\Money\BRL) 1.000000 160.000000 box
+ (SebastianBergmann\Money\BSD) 1.000000 159.000000 box
+ (SebastianBergmann\Money\BTN) 1.000000 158.000000 box
+ (SebastianBergmann\Money\BWP) 1.000000 157.000000 box
+ (SebastianBergmann\Money\BYR) 1.000000 156.000000 box
+ (SebastianBergmann\Money\BZD) 1.000000 155.000000 box
+ (SebastianBergmann\Money\CAD) 1.000000 154.000000 box
+ (SebastianBergmann\Money\CDF) 1.000000 153.000000 box
+ (SebastianBergmann\Money\CHE) 1.000000 152.000000 box
+ (SebastianBergmann\Money\CHF) 1.000000 151.000000 box
+ (SebastianBergmann\Money\CHW) 1.000000 150.000000 box
+ (SebastianBergmann\Money\CLF) 1.000000 149.000000 box
+ (SebastianBergmann\Money\CLP) 1.000000 148.000000 box
+ (SebastianBergmann\Money\CNY) 1.000000 147.000000 box
+ (SebastianBergmann\Money\COP) 1.000000 146.000000 box
+ (SebastianBergmann\Money\COU) 1.000000 145.000000 box
+ (SebastianBergmann\Money\CRC) 1.000000 144.000000 box
+ (SebastianBergmann\Money\CUC) 1.000000 143.000000 box
+ (SebastianBergmann\Money\CUP) 1.000000 142.000000 box
+ (SebastianBergmann\Money\CVE) 1.000000 141.000000 box
+ (SebastianBergmann\Money\CZK) 1.000000 140.000000 box
+ (SebastianBergmann\Money\DJF) 1.000000 139.000000 box
+ (SebastianBergmann\Money\DKK) 1.000000 138.000000 box
+ (SebastianBergmann\Money\DOP) 1.000000 137.000000 box
+ (SebastianBergmann\Money\DZD) 1.000000 136.000000 box
+ (SebastianBergmann\Money\EGP) 1.000000 135.000000 box
+ (SebastianBergmann\Money\ERN) 1.000000 134.000000 box
+ (SebastianBergmann\Money\ETB) 1.000000 133.000000 box
+ (SebastianBergmann\Money\EUR) 1.000000 132.000000 box
+ (SebastianBergmann\Money\FJD) 1.000000 131.000000 box
+ (SebastianBergmann\Money\FKP) 1.000000 130.000000 box
+ (SebastianBergmann\Money\GBP) 1.000000 129.000000 box
+ (SebastianBergmann\Money\GEL) 1.000000 128.000000 box
+ (SebastianBergmann\Money\GHS) 1.000000 127.000000 box
+ (SebastianBergmann\Money\GIP) 1.000000 126.000000 box
+ (SebastianBergmann\Money\GMD) 1.000000 125.000000 box
+ (SebastianBergmann\Money\GNF) 1.000000 124.000000 box
+ (SebastianBergmann\Money\GTQ) 1.000000 123.000000 box
+ (SebastianBergmann\Money\GYD) 1.000000 122.000000 box
+ (SebastianBergmann\Money\HKD) 1.000000 121.000000 box
+ (SebastianBergmann\Money\HNL) 1.000000 120.000000 box
+ (SebastianBergmann\Money\HRK) 1.000000 119.000000 box
+ (SebastianBergmann\Money\HTG) 1.000000 118.000000 box
+ (SebastianBergmann\Money\HUF) 1.000000 117.000000 box
+ (SebastianBergmann\Money\IDR) 1.000000 116.000000 box
+ (SebastianBergmann\Money\ILS) 1.000000 115.000000 box
+ (SebastianBergmann\Money\INR) 1.000000 114.000000 box
+ (SebastianBergmann\Money\IQD) 1.000000 113.000000 box
+ (SebastianBergmann\Money\IRR) 1.000000 112.000000 box
+ (SebastianBergmann\Money\ISK) 1.000000 111.000000 box
+ (SebastianBergmann\Money\JMD) 1.000000 110.000000 box
+ (SebastianBergmann\Money\JOD) 1.000000 109.000000 box
+ (SebastianBergmann\Money\JPY) 1.000000 108.000000 box
+ (SebastianBergmann\Money\KES) 1.000000 107.000000 box
+ (SebastianBergmann\Money\KGS) 1.000000 106.000000 box
+ (SebastianBergmann\Money\KHR) 1.000000 105.000000 box
+ (SebastianBergmann\Money\KMF) 1.000000 104.000000 box
+ (SebastianBergmann\Money\KPW) 1.000000 103.000000 box
+ (SebastianBergmann\Money\KRW) 1.000000 102.000000 box
+ (SebastianBergmann\Money\KWD) 1.000000 101.000000 box
+ (SebastianBergmann\Money\KYD) 1.000000 100.000000 box
+ (SebastianBergmann\Money\KZT) 1.000000 99.000000 box
+ (SebastianBergmann\Money\LAK) 1.000000 98.000000 box
+ (SebastianBergmann\Money\LBP) 1.000000 97.000000 box
+ (SebastianBergmann\Money\LKR) 1.000000 96.000000 box
+ (SebastianBergmann\Money\LRD) 1.000000 95.000000 box
+ (SebastianBergmann\Money\LSL) 1.000000 94.000000 box
+ (SebastianBergmann\Money\LTL) 1.000000 93.000000 box
+ (SebastianBergmann\Money\LVL) 1.000000 92.000000 box
+ (SebastianBergmann\Money\LYD) 1.000000 91.000000 box
+ (SebastianBergmann\Money\MAD) 1.000000 90.000000 box
+ (SebastianBergmann\Money\MDL) 1.000000 89.000000 box
+ (SebastianBergmann\Money\MGA) 1.000000 88.000000 box
+ (SebastianBergmann\Money\MKD) 1.000000 87.000000 box
+ (SebastianBergmann\Money\MMK) 1.000000 86.000000 box
+ (SebastianBergmann\Money\MNT) 1.000000 85.000000 box
+ (SebastianBergmann\Money\MOP) 1.000000 84.000000 box
+ (SebastianBergmann\Money\MRO) 1.000000 83.000000 box
+ (SebastianBergmann\Money\MUR) 1.000000 82.000000 box
+ (SebastianBergmann\Money\MVR) 1.000000 81.000000 box
+ (SebastianBergmann\Money\MWK) 1.000000 80.000000 box
+ (SebastianBergmann\Money\MXN) 1.000000 79.000000 box
+ (SebastianBergmann\Money\MXV) 1.000000 78.000000 box
+ (SebastianBergmann\Money\MYR) 1.000000 77.000000 box
+ (SebastianBergmann\Money\MZN) 1.000000 76.000000 box
+ (SebastianBergmann\Money\NAD) 1.000000 75.000000 box
+ (SebastianBergmann\Money\NGN) 1.000000 74.000000 box
+ (SebastianBergmann\Money\NIO) 1.000000 73.000000 box
+ (SebastianBergmann\Money\NOK) 1.000000 72.000000 box
+ (SebastianBergmann\Money\NPR) 1.000000 71.000000 box
+ (SebastianBergmann\Money\NZD) 1.000000 70.000000 box
+ (SebastianBergmann\Money\OMR) 1.000000 69.000000 box
+ (SebastianBergmann\Money\PAB) 1.000000 68.000000 box
+ (SebastianBergmann\Money\PEN) 1.000000 67.000000 box
+ (SebastianBergmann\Money\PGK) 1.000000 66.000000 box
+ (SebastianBergmann\Money\PHP) 1.000000 65.000000 box
+ (SebastianBergmann\Money\PKR) 1.000000 64.000000 box
+ (SebastianBergmann\Money\PLN) 1.000000 63.000000 box
+ (SebastianBergmann\Money\PYG) 1.000000 62.000000 box
+ (SebastianBergmann\Money\QAR) 1.000000 61.000000 box
+ (SebastianBergmann\Money\RON) 1.000000 60.000000 box
+ (SebastianBergmann\Money\RSD) 1.000000 59.000000 box
+ (SebastianBergmann\Money\RUB) 1.000000 58.000000 box
+ (SebastianBergmann\Money\RWF) 1.000000 57.000000 box
+ (SebastianBergmann\Money\SAR) 1.000000 56.000000 box
+ (SebastianBergmann\Money\SBD) 1.000000 55.000000 box
+ (SebastianBergmann\Money\SCR) 1.000000 54.000000 box
+ (SebastianBergmann\Money\SDG) 1.000000 53.000000 box
+ (SebastianBergmann\Money\SEK) 1.000000 52.000000 box
+ (SebastianBergmann\Money\SGD) 1.000000 51.000000 box
+ (SebastianBergmann\Money\SHP) 1.000000 50.000000 box
+ (SebastianBergmann\Money\SLL) 1.000000 49.000000 box
+ (SebastianBergmann\Money\SOS) 1.000000 48.000000 box
+ (SebastianBergmann\Money\SRD) 1.000000 47.000000 box
+ (SebastianBergmann\Money\SSP) 1.000000 46.000000 box
+ (SebastianBergmann\Money\STD) 1.000000 45.000000 box
+ (SebastianBergmann\Money\SVC) 1.000000 44.000000 box
+ (SebastianBergmann\Money\SYP) 1.000000 43.000000 box
+ (SebastianBergmann\Money\SZL) 1.000000 42.000000 box
+ (SebastianBergmann\Money\THB) 1.000000 41.000000 box
+ (SebastianBergmann\Money\TJS) 1.000000 40.000000 box
+ (SebastianBergmann\Money\TMT) 1.000000 39.000000 box
+ (SebastianBergmann\Money\TND) 1.000000 38.000000 box
+ (SebastianBergmann\Money\TOP) 1.000000 37.000000 box
+ (SebastianBergmann\Money\TTD) 1.000000 36.000000 box
+ (SebastianBergmann\Money\TWD) 1.000000 35.000000 box
+ (SebastianBergmann\Money\TZS) 1.000000 34.000000 box
+ (SebastianBergmann\Money\UAH) 1.000000 33.000000 box
+ (SebastianBergmann\Money\UGX) 1.000000 32.000000 box
+ (SebastianBergmann\Money\USD) 1.000000 31.000000 box
+ (SebastianBergmann\Money\USN) 1.000000 30.000000 box
+ (SebastianBergmann\Money\USS) 1.000000 29.000000 box
+ (SebastianBergmann\Money\UYI) 1.000000 28.000000 box
+ (SebastianBergmann\Money\UYU) 1.000000 27.000000 box
+ (SebastianBergmann\Money\UZS) 1.000000 26.000000 box
+ (SebastianBergmann\Money\VEF) 1.000000 25.000000 box
+ (SebastianBergmann\Money\VND) 1.000000 24.000000 box
+ (SebastianBergmann\Money\VUV) 1.000000 23.000000 box
+ (SebastianBergmann\Money\WST) 1.000000 22.000000 box
+ (SebastianBergmann\Money\XAF) 1.000000 21.000000 box
+ (SebastianBergmann\Money\XAG) 1.000000 20.000000 box
+ (SebastianBergmann\Money\XAU) 1.000000 19.000000 box
+ (SebastianBergmann\Money\XBA) 1.000000 18.000000 box
+ (SebastianBergmann\Money\XBB) 1.000000 17.000000 box
+ (SebastianBergmann\Money\XBC) 1.000000 16.000000 box
+ (SebastianBergmann\Money\XBD) 1.000000 15.000000 box
+ (SebastianBergmann\Money\XCD) 1.000000 14.000000 box
+ (SebastianBergmann\Money\XDR) 1.000000 13.000000 box
+ (SebastianBergmann\Money\XFU) 1.000000 12.000000 box
+ (SebastianBergmann\Money\XOF) 1.000000 11.000000 box
+ (SebastianBergmann\Money\XPD) 1.000000 10.000000 box
+ (SebastianBergmann\Money\XPF) 1.000000 9.000000 box
+ (SebastianBergmann\Money\XPT) 1.000000 8.000000 box
+ (SebastianBergmann\Money\XSU) 1.000000 7.000000 box
+ (SebastianBergmann\Money\XTS) 1.000000 6.000000 box
+ (SebastianBergmann\Money\XUA) 1.000000 5.000000 box
+ (SebastianBergmann\Money\XXX) 1.000000 4.000000 box
+ (SebastianBergmann\Money\YER) 1.000000 3.000000 box
+ (SebastianBergmann\Money\ZAR) 1.000000 2.000000 box
+ (SebastianBergmann\Money\ZMW) 1.000000 1.000000 box
+ (SebastianBergmann\Money\ZWL) 1.000000 0.000000 box
+
+% ----- relations -----
+
+solid
+0 0.000000 181.000000 out
+solid
+1 0.000000 182.000000 in
+solid
+1 0.000000 180.250000 out
+solid
+0 0.000000 180.500000 hedge
+solid
+0 0.000000 179.500000 hedge
+solid
+0 0.000000 178.500000 hedge
+solid
+0 0.000000 177.500000 hedge
+solid
+0 0.000000 176.500000 hedge
+solid
+0 0.000000 175.500000 hedge
+solid
+0 0.000000 174.500000 hedge
+solid
+0 0.000000 173.500000 hedge
+solid
+0 0.000000 172.500000 hedge
+solid
+0 0.000000 171.500000 hedge
+solid
+0 0.000000 170.500000 hedge
+solid
+0 0.000000 169.500000 hedge
+solid
+0 0.000000 168.500000 hedge
+solid
+0 0.000000 167.500000 hedge
+solid
+0 0.000000 166.500000 hedge
+solid
+0 0.000000 165.500000 hedge
+solid
+0 0.000000 164.500000 hedge
+solid
+0 0.000000 163.500000 hedge
+solid
+0 0.000000 162.500000 hedge
+solid
+0 0.000000 161.500000 hedge
+solid
+0 0.000000 160.500000 hedge
+solid
+0 0.000000 159.500000 hedge
+solid
+0 0.000000 158.500000 hedge
+solid
+0 0.000000 157.500000 hedge
+solid
+0 0.000000 156.500000 hedge
+solid
+0 0.000000 155.500000 hedge
+solid
+0 0.000000 154.500000 hedge
+solid
+0 0.000000 153.500000 hedge
+solid
+0 0.000000 152.500000 hedge
+solid
+0 0.000000 151.500000 hedge
+solid
+0 0.000000 150.500000 hedge
+solid
+0 0.000000 149.500000 hedge
+solid
+0 0.000000 148.500000 hedge
+solid
+0 0.000000 147.500000 hedge
+solid
+0 0.000000 146.500000 hedge
+solid
+0 0.000000 145.500000 hedge
+solid
+0 0.000000 144.500000 hedge
+solid
+0 0.000000 143.500000 hedge
+solid
+0 0.000000 142.500000 hedge
+solid
+0 0.000000 141.500000 hedge
+solid
+0 0.000000 140.500000 hedge
+solid
+0 0.000000 139.500000 hedge
+solid
+0 0.000000 138.500000 hedge
+solid
+0 0.000000 137.500000 hedge
+solid
+0 0.000000 136.500000 hedge
+solid
+0 0.000000 135.500000 hedge
+solid
+0 0.000000 134.500000 hedge
+solid
+0 0.000000 133.500000 hedge
+solid
+0 0.000000 132.500000 hedge
+solid
+0 0.000000 131.500000 hedge
+solid
+0 0.000000 130.500000 hedge
+solid
+0 0.000000 129.500000 hedge
+solid
+0 0.000000 128.500000 hedge
+solid
+0 0.000000 127.500000 hedge
+solid
+0 0.000000 126.500000 hedge
+solid
+0 0.000000 125.500000 hedge
+solid
+0 0.000000 124.500000 hedge
+solid
+0 0.000000 123.500000 hedge
+solid
+0 0.000000 122.500000 hedge
+solid
+0 0.000000 121.500000 hedge
+solid
+0 0.000000 120.500000 hedge
+solid
+0 0.000000 119.500000 hedge
+solid
+0 0.000000 118.500000 hedge
+solid
+0 0.000000 117.500000 hedge
+solid
+0 0.000000 116.500000 hedge
+solid
+0 0.000000 115.500000 hedge
+solid
+0 0.000000 114.500000 hedge
+solid
+0 0.000000 113.500000 hedge
+solid
+0 0.000000 112.500000 hedge
+solid
+0 0.000000 111.500000 hedge
+solid
+0 0.000000 110.500000 hedge
+solid
+0 0.000000 109.500000 hedge
+solid
+0 0.000000 108.500000 hedge
+solid
+0 0.000000 107.500000 hedge
+solid
+0 0.000000 106.500000 hedge
+solid
+0 0.000000 105.500000 hedge
+solid
+0 0.000000 104.500000 hedge
+solid
+0 0.000000 103.500000 hedge
+solid
+0 0.000000 102.500000 hedge
+solid
+0 0.000000 101.500000 hedge
+solid
+0 0.000000 100.500000 hedge
+solid
+0 0.000000 99.500000 hedge
+solid
+0 0.000000 98.500000 hedge
+solid
+0 0.000000 97.500000 hedge
+solid
+0 0.000000 96.500000 hedge
+solid
+0 0.000000 95.500000 hedge
+solid
+0 0.000000 94.500000 hedge
+solid
+0 0.000000 93.500000 hedge
+solid
+0 0.000000 92.500000 hedge
+solid
+0 0.000000 91.500000 hedge
+solid
+0 0.000000 90.500000 hedge
+solid
+0 0.000000 89.500000 hedge
+solid
+0 0.000000 88.500000 hedge
+solid
+0 0.000000 87.500000 hedge
+solid
+0 0.000000 86.500000 hedge
+solid
+0 0.000000 85.500000 hedge
+solid
+0 0.000000 84.500000 hedge
+solid
+0 0.000000 83.500000 hedge
+solid
+0 0.000000 82.500000 hedge
+solid
+0 0.000000 81.500000 hedge
+solid
+0 0.000000 80.500000 hedge
+solid
+0 0.000000 79.500000 hedge
+solid
+0 0.000000 78.500000 hedge
+solid
+0 0.000000 77.500000 hedge
+solid
+0 0.000000 76.500000 hedge
+solid
+0 0.000000 75.500000 hedge
+solid
+0 0.000000 74.500000 hedge
+solid
+0 0.000000 73.500000 hedge
+solid
+0 0.000000 72.500000 hedge
+solid
+0 0.000000 71.500000 hedge
+solid
+0 0.000000 70.500000 hedge
+solid
+0 0.000000 69.500000 hedge
+solid
+0 0.000000 68.500000 hedge
+solid
+0 0.000000 67.500000 hedge
+solid
+0 0.000000 66.500000 hedge
+solid
+0 0.000000 65.500000 hedge
+solid
+0 0.000000 64.500000 hedge
+solid
+0 0.000000 63.500000 hedge
+solid
+0 0.000000 62.500000 hedge
+solid
+0 0.000000 61.500000 hedge
+solid
+0 0.000000 60.500000 hedge
+solid
+0 0.000000 59.500000 hedge
+solid
+0 0.000000 58.500000 hedge
+solid
+0 0.000000 57.500000 hedge
+solid
+0 0.000000 56.500000 hedge
+solid
+0 0.000000 55.500000 hedge
+solid
+0 0.000000 54.500000 hedge
+solid
+0 0.000000 53.500000 hedge
+solid
+0 0.000000 52.500000 hedge
+solid
+0 0.000000 51.500000 hedge
+solid
+0 0.000000 50.500000 hedge
+solid
+0 0.000000 49.500000 hedge
+solid
+0 0.000000 48.500000 hedge
+solid
+0 0.000000 47.500000 hedge
+solid
+0 0.000000 46.500000 hedge
+solid
+0 0.000000 45.500000 hedge
+solid
+0 0.000000 44.500000 hedge
+solid
+0 0.000000 43.500000 hedge
+solid
+0 0.000000 42.500000 hedge
+solid
+0 0.000000 41.500000 hedge
+solid
+0 0.000000 40.500000 hedge
+solid
+0 0.000000 39.500000 hedge
+solid
+0 0.000000 38.500000 hedge
+solid
+0 0.000000 37.500000 hedge
+solid
+0 0.000000 36.500000 hedge
+solid
+0 0.000000 35.500000 hedge
+solid
+0 0.000000 34.500000 hedge
+solid
+0 0.000000 33.500000 hedge
+solid
+0 0.000000 32.500000 hedge
+solid
+0 0.000000 31.500000 hedge
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
+solid
+0 0.000000 27.500000 hedge
+solid
+0 0.000000 26.500000 hedge
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 181.000000 0.500000 vedge
