@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1421478507">
-  <project timestamp="1421478507">
+<coverage generated="1421536756">
+  <project timestamp="1421536756">
     <package name="SebastianBergmann\Money">
       <file name="/var/www/html/jenkins/src/Currency.php">
         <class name="Currency" namespace="SebastianBergmann\Money" fullPackage="Money" package="Money">

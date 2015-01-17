@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Money" tests="42" assertions="62" failures="0" errors="0" time="0.142865">
-    <testsuite name="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" tests="10" assertions="10" failures="0" errors="0" time="0.028015">
-      <testcase name="testExceptionIsRaisedForInvalidConstructorArgument" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="19" assertions="1" time="0.003011"/>
-      <testcase name="testCanBeConstructedFromUppercaseString" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="27" assertions="1" time="0.001240"/>
-      <testcase name="testCanBeConstructedFromLowercaseString" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="39" assertions="1" time="0.000921"/>
-      <testcase name="testCustomCurrencyCanBeRegistered" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="51" assertions="1" time="0.007104"/>
-      <testcase name="testCanBeCastToString" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="71" assertions="1" time="0.005451"/>
-      <testcase name="testCurrencyCodeCanBeRetrieved" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="80" assertions="1" time="0.002481"/>
-      <testcase name="testDefaultFractionDigitsCanBeRetrieved" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="89" assertions="1" time="0.002005"/>
-      <testcase name="testDisplayNameCanBeRetrieved" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="98" assertions="1" time="0.001956"/>
-      <testcase name="testNumericCodeCanBeRetrieved" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="107" assertions="1" time="0.002196"/>
-      <testcase name="testSubUnitCanBeRetrieved" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="116" assertions="1" time="0.001650"/>
+  <testsuite name="Money" tests="42" assertions="62" failures="0" errors="0" time="0.135864">
+    <testsuite name="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" tests="10" assertions="10" failures="0" errors="0" time="0.025654">
+      <testcase name="testExceptionIsRaisedForInvalidConstructorArgument" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="19" assertions="1" time="0.003733"/>
+      <testcase name="testCanBeConstructedFromUppercaseString" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="27" assertions="1" time="0.001961"/>
+      <testcase name="testCanBeConstructedFromLowercaseString" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="39" assertions="1" time="0.000883"/>
+      <testcase name="testCustomCurrencyCanBeRegistered" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="51" assertions="1" time="0.006343"/>
+      <testcase name="testCanBeCastToString" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="71" assertions="1" time="0.004743"/>
+      <testcase name="testCurrencyCodeCanBeRetrieved" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="80" assertions="1" time="0.001531"/>
+      <testcase name="testDefaultFractionDigitsCanBeRetrieved" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="89" assertions="1" time="0.001536"/>
+      <testcase name="testDisplayNameCanBeRetrieved" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="98" assertions="1" time="0.001654"/>
+      <testcase name="testNumericCodeCanBeRetrieved" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="107" assertions="1" time="0.001646"/>
+      <testcase name="testSubUnitCanBeRetrieved" class="SebastianBergmann\Money\CurrencyTest" file="/var/www/html/jenkins/tests/CurrencyTest.php" line="116" assertions="1" time="0.001624"/>
     </testsuite>
-    <testsuite name="SebastianBergmann\Money\IntlFormatterTest" file="/var/www/html/jenkins/tests/IntlFormatterTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.003549">
-      <testcase name="testMoneyObjectCanBeFormattedAsString" class="SebastianBergmann\Money\IntlFormatterTest" file="/var/www/html/jenkins/tests/IntlFormatterTest.php" line="21" assertions="1" time="0.003549"/>
+    <testsuite name="SebastianBergmann\Money\IntlFormatterTest" file="/var/www/html/jenkins/tests/IntlFormatterTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.003477">
+      <testcase name="testMoneyObjectCanBeFormattedAsString" class="SebastianBergmann\Money\IntlFormatterTest" file="/var/www/html/jenkins/tests/IntlFormatterTest.php" line="21" assertions="1" time="0.003477"/>
     </testsuite>
-    <testsuite name="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" tests="31" assertions="51" failures="0" errors="0" time="0.111301">
-      <testcase name="testExceptionIsRaisedForInvalidConstructorArguments" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="20" assertions="1" time="0.001425"/>
-      <testcase name="testExceptionIsRaisedForInvalidConstructorArguments2" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="31" assertions="1" time="0.000946"/>
-      <testcase name="testExceptionIsRaisedForInvalidConstructorArguments3" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="41" assertions="1" time="0.000953"/>
-      <testcase name="testObjectCanBeConstructedForValidConstructorArguments" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="51" assertions="1" time="0.000783"/>
-      <testcase name="testObjectCanBeConstructedForValidConstructorArguments2" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="65" assertions="1" time="0.001258"/>
-      <testcase name="testObjectCanBeConstructedFromStringValue" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="80" assertions="1" time="0.003744"/>
-      <testcase name="testObjectCanBeConstructedFromStringValue2" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="94" assertions="1" time="0.005315"/>
-      <testcase name="testAmountCanBeRetrieved" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="106" assertions="1" time="0.001750"/>
-      <testcase name="testCurrencyCanBeRetrieved" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="116" assertions="1" time="0.002975"/>
-      <testcase name="testAnotherMoneyObjectWithSameCurrencyCanBeAdded" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="132" assertions="3" time="0.013069"/>
-      <testcase name="testExceptionIsThrownForOverflowingAddition" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="155" assertions="1" time="0.001812"/>
-      <testcase name="testExceptionIsRaisedForIntegerOverflow" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="171" assertions="1" time="0.001004"/>
-      <testcase name="testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsAdded" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="187" assertions="1" time="0.001315"/>
-      <testcase name="testAnotherMoneyObjectWithSameCurrencyCanBeSubtracted" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="206" assertions="3" time="0.005763"/>
-      <testcase name="testExceptionIsThrownForOverflowingSubtraction" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="229" assertions="1" time="0.001171"/>
-      <testcase name="testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsSubtracted" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="246" assertions="1" time="0.000952"/>
-      <testcase name="testCanBeNegated" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="262" assertions="2" time="0.003249"/>
-      <testcase name="testCanBeMultipliedByAFactor" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="281" assertions="2" time="0.003684"/>
-      <testcase name="testExceptionIsRaisedWhenMultipliedUsingInvalidRoundingMode" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="297" assertions="1" time="0.000843"/>
-      <testcase name="testCanBeAllocatedToNumberOfTargets" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="311" assertions="1" time="0.024340"/>
-      <testcase name="testPercentageCanBeExtracted" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="347" assertions="2" time="0.007231"/>
-      <testcase name="testExceptionIsRaisedWhenTryingToAllocateToInvalidNumberOfTargets" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="363" assertions="1" time="0.000889"/>
-      <testcase name="testCanBeAllocatedByRatios" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="379" assertions="1" time="0.006915"/>
-      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="402" assertions="3" time="0.004908"/>
-      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency2" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="423" assertions="2" time="0.001806"/>
-      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency3" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="443" assertions="2" time="0.001439"/>
-      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency4" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="463" assertions="4" time="0.004009"/>
-      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency5" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="487" assertions="4" time="0.001860"/>
-      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency6" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="512" assertions="4" time="0.001954"/>
-      <testcase name="testExceptionIsRaisedWhenComparedToMoneyObjectWithDifferentCurrency" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="533" assertions="1" time="0.001664"/>
-      <testcase name="testCanBeSerializedToJson" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="548" assertions="1" time="0.002274"/>
+    <testsuite name="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" tests="31" assertions="51" failures="0" errors="0" time="0.106733">
+      <testcase name="testExceptionIsRaisedForInvalidConstructorArguments" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="20" assertions="1" time="0.001332"/>
+      <testcase name="testExceptionIsRaisedForInvalidConstructorArguments2" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="31" assertions="1" time="0.000892"/>
+      <testcase name="testExceptionIsRaisedForInvalidConstructorArguments3" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="41" assertions="1" time="0.001747"/>
+      <testcase name="testObjectCanBeConstructedForValidConstructorArguments" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="51" assertions="1" time="0.000485"/>
+      <testcase name="testObjectCanBeConstructedForValidConstructorArguments2" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="65" assertions="1" time="0.000743"/>
+      <testcase name="testObjectCanBeConstructedFromStringValue" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="80" assertions="1" time="0.004617"/>
+      <testcase name="testObjectCanBeConstructedFromStringValue2" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="94" assertions="1" time="0.004105"/>
+      <testcase name="testAmountCanBeRetrieved" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="106" assertions="1" time="0.001747"/>
+      <testcase name="testCurrencyCanBeRetrieved" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="116" assertions="1" time="0.002983"/>
+      <testcase name="testAnotherMoneyObjectWithSameCurrencyCanBeAdded" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="132" assertions="3" time="0.008559"/>
+      <testcase name="testExceptionIsThrownForOverflowingAddition" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="155" assertions="1" time="0.001210"/>
+      <testcase name="testExceptionIsRaisedForIntegerOverflow" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="171" assertions="1" time="0.001209"/>
+      <testcase name="testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsAdded" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="187" assertions="1" time="0.001678"/>
+      <testcase name="testAnotherMoneyObjectWithSameCurrencyCanBeSubtracted" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="206" assertions="3" time="0.004883"/>
+      <testcase name="testExceptionIsThrownForOverflowingSubtraction" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="229" assertions="1" time="0.001686"/>
+      <testcase name="testExceptionIsRaisedWhenMoneyObjectWithDifferentCurrencyIsSubtracted" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="246" assertions="1" time="0.001083"/>
+      <testcase name="testCanBeNegated" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="262" assertions="2" time="0.003439"/>
+      <testcase name="testCanBeMultipliedByAFactor" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="281" assertions="2" time="0.002911"/>
+      <testcase name="testExceptionIsRaisedWhenMultipliedUsingInvalidRoundingMode" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="297" assertions="1" time="0.000914"/>
+      <testcase name="testCanBeAllocatedToNumberOfTargets" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="311" assertions="1" time="0.024119"/>
+      <testcase name="testPercentageCanBeExtracted" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="347" assertions="2" time="0.007125"/>
+      <testcase name="testExceptionIsRaisedWhenTryingToAllocateToInvalidNumberOfTargets" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="363" assertions="1" time="0.001003"/>
+      <testcase name="testCanBeAllocatedByRatios" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="379" assertions="1" time="0.006544"/>
+      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="402" assertions="3" time="0.005189"/>
+      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency2" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="423" assertions="2" time="0.001536"/>
+      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency3" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="443" assertions="2" time="0.001876"/>
+      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency4" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="463" assertions="4" time="0.003797"/>
+      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency5" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="487" assertions="4" time="0.002948"/>
+      <testcase name="testCanBeComparedToAnotherMoneyObjectWithSameCurrency6" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="512" assertions="4" time="0.002787"/>
+      <testcase name="testExceptionIsRaisedWhenComparedToMoneyObjectWithDifferentCurrency" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="533" assertions="1" time="0.001132"/>
+      <testcase name="testCanBeSerializedToJson" class="SebastianBergmann\Money\MoneyTest" file="/var/www/html/jenkins/tests/MoneyTest.php" line="548" assertions="1" time="0.002454"/>
     </testsuite>
   </testsuite>
 </testsuites>
